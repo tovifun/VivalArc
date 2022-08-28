@@ -1,3 +1,6 @@
+[CN](doc_将Vivaldi配置成Arc.md) | EN
+
+
 <aside>
 💡 README**：**
 
