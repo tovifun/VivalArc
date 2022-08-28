@@ -1,3 +1,4 @@
+CN | [EN](doc_configure-vivaldi.md)
 
 <aside>
 💡 **几点说明：**

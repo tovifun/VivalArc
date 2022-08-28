@@ -1,5 +1,6 @@
 这个项目主要包含一个 CSS 文件和一个 Vivaldi 主题。通过几步简单的设置，可以将 Vivaldi 魔改成 Arc。
 
+![截屏预览](assets/vivalarc_screenshot.jpg)
 
 ## 为什么做这个
 
@@ -11,5 +12,4 @@
 
 虽然比不上 Arc 的 UI 和细节，但是这套配置体验下来，我觉得能够大致还原 Arc 的使用体验。于是想将这套设置分享给大家，如果你还在等待 Arc 的测试，或者因为 Arc 过于占内存和过于[美貌](https://type.cyhsu.xyz/2022/08/arc/)，想试试别的选择，可以尝试使用下这套配置。
 
-[设置方式](VivalArc/doc_将 Vivaldi 配置成 Arc.md)
-[EN](VivalArc/doc_configure-vivaldi.md)
+[设置方式_CN](doc_将Vivaldi配置成Arc.md.md) | [EN](doc_configure-vivaldi.md)
