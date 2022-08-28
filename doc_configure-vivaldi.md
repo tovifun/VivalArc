@@ -19,6 +19,7 @@
 - **Tabs** > Tab bar position > `Left`
 - **Tabs** > Tab Stacking > `According`
 - **Tabs** > Pinned Tabs > `Check 'Show Separator Below Pinned Tabs'`
+- **Tabs** > Tab Handling > `Uncheck ‘Keep Window Open when Last Tab is Closed’`
 - **Panel** > Panel Options > `Check 'Floating Panel'`
 - **Address Bar** > `Uncheck 'Show Address Bar'`
 - **Quick Commands** > `Check 'Open Links In New Tab'`
@@ -27,7 +28,7 @@
     - Quick Command > `Command + T`
     - Save Page As > Remove it
     - Tab Bar > `Command + S`
-    - Address Bar（） > `Command + B`（Windows下需先移除「书签」的快捷键）
+    - Address Bar（） > `Command + B`
     - 创建书签 > Remove it
     - Pin / Unpin Tab > `Command + D`
     - Print > Remove it
