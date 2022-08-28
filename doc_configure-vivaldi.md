@@ -1,13 +1,11 @@
 [CN](doc_将Vivaldi配置成Arc.md) | EN
 
 
-<aside>
-💡 README**：**
+### 💡README：
 
 1. It is essentially changing the appearance using the Vivaldi browser’s custom UI MOD feature
 2. If you want to return to the original effect, you just need to delete the local CSS
 3. This configuration also works on Windows. In the process of setting the shortcut keys, simply replace `Command` with `Ctrl`
-</aside>
 
 ### 1. Install Vivaldi Browser
 

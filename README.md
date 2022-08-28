@@ -1,3 +1,4 @@
+## [VivalArc](https://vivalarc.tovi.fun)
 这个项目主要包含一个 CSS 文件和一个 Vivaldi 主题。通过几步简单的设置，可以将 Vivaldi 魔改成 Arc。
 
 ![截屏预览](assets/vivalarc_screenshot.jpg)
