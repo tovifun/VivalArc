@@ -1,4 +1,4 @@
-CN | [EN](doc_configure-vivaldi.md)
+[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ/?vd_source=103a1da26948412544dd2b203b193997) | [📝设置方式-文字版](doc_将Vivaldi配置成Arc.md) | [📝EN](doc_configure-vivaldi.md)
 
 ### 💡**几点说明：**
 

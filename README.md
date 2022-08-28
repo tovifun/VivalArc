@@ -13,4 +13,4 @@
 
 虽然最后的效果比不上 Arc 的 UI 和细节，但是这套配置体验下来，我觉得能够大致还原 Arc 的使用体验。所以想将这套配置分享给大家，如果你还在等待 Arc 的测试，或者因为 Arc 过于占内存，想试试别的选择，那么可以尝试使用一下我的这个配置。
 
-[设置方式_CN](doc_将Vivaldi配置成Arc.md) | [EN](doc_configure-vivaldi.md)
+[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ/?vd_source=103a1da26948412544dd2b203b193997) | [📝设置方式-文字版](doc_将Vivaldi配置成Arc.md) | [📝EN](doc_configure-vivaldi.md)
