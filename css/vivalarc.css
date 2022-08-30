@@ -41,7 +41,7 @@
 }
 
 #browser .tab-position .tab.active{
-    box-shadow: 0px 0px 6px #0000001f;      
+    box-shadow: 0px 0px 4px #00000007;      
 }
 
 #tabs-container.left .tab-strip{
