@@ -8,16 +8,17 @@
     box-shadow:none;
 }
 
-
 /* webview */
 #webview-container{
     margin:8px;
 }
 
 #webpage-stack{
-    border-radius:8px;
+    border-radius:6px;
     box-shadow: 0px 0px 8px #0000002d;
 }
+
+
 
 /* tabbar left&right */
 #tabs-tabbar-container{
@@ -168,11 +169,12 @@
 }
 
 .webpageview{
-    border-radius: 4px;
+    border-radius: 6px;
+    border: 1px solid #ffffff1f;
 }
 
 .webpageview > .row-wrapper{
-    border-radius:4px;
+    border-radius:6px;
 }
 
 

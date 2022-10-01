@@ -1,0 +1,6 @@
+/* tabbar left&right 
+如果你习惯开启 Panel，则可以去除 Tabbar 的拖拽功能*/
+#tabs-tabbar-container{
+    -webkit-app-region: no-drag;
+    box-shadow:none;
+}

@@ -1,4 +1,14 @@
-/*
-    You can add references to your own .css stylessheets in this file
+/* 
+You can add references to your own .css stylessheets in this file
 */
-@import url("css/vivalarc.css");
+
+/* 说明
+在下方开关样式表来修改特定的样式
+    如果你习惯开启面板，则取消注释 panel_mode.sss 
+    如果你想显示新建标签按钮，则取消注释 new_tab.css
+取消注释 ── 删除一行里的星号和反斜杠
+*/
+
+@import url("css/vivalarc_main.css");
+/* @import url("css/panel_mode.css");  */
+/* @import url("css/new_tab.css");  */
