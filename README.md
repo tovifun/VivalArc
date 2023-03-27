@@ -1,7 +1,7 @@
-## [VivalArc](https://vivalarc.tovi.fun)
+## [VivalArc](https://arc.tovi.fun)
 这个项目主要包含一套 CSS 文件和一个 Vivaldi 主题。通过几步简单的设置，可以将 Vivaldi 魔改成 Arc。
 
-[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ) | [📝设置方式-文字版](configure-vivaldi-cn.md) | [📝EN](configure-vivaldi.md) | [🧑‍💻更新日志](changelog-cn.md)
+[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ) | [📝设置方式-文字版](./docs/configure-vivaldi-cn.md) | [📝EN](./docs/configure-vivaldi.md) | [🧑‍💻更新日志](./docs/changelog-cn.md)
 
 ![截屏预览](assets/vivalarc_screenshot.jpg)
 
