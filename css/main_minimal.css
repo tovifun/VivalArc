@@ -1,0 +1,97 @@
+
+/* transparent header*/
+#browser:not(.address-top) > #header,
+.color-behind-tabs-off:not(.is-settingspage)#browser:not(.tabs-top):not(.tabs-bottom) #header
+{
+    box-shadow:none;
+    background:transparent;
+}
+
+/*tabbar left & tabbar right*/
+
+.transparent-tabbar.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button,
+.transparent-tabbar.tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button{
+    background:transparent;
+}
+
+#browser.transparent-tabbar #tabs-tabbar-container.left, 
+#browser.transparent-tabbar #tabs-tabbar-container.right{
+    background: transparent;
+    border: none;
+    box-shadow:none;
+}
+
+#browser.transparent-tabbar #tabs-tabbar-container.left  ::-webkit-scrollbar, 
+#browser.transparent-tabbar #tabs-tabbar-container.right  ::-webkit-scrollbar
+{
+    display: none;
+}
+
+
+/*panel*/
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels #switch{
+    padding-top: 0;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels{
+    background: transparent;  
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.right:not(.icons) .panel-group, 
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.right.icons:not(:has(.SlideBar))
+{
+    border-left:0;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.left:not(.icons) .panel-group, 
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.left.icons:not(:has(.SlideBar))
+{
+    border-right:0;
+}
+
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.right.icons:not(:has(.SlideBar)),
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.left.icons:not(:has(.SlideBar))
+{
+    background: transparent;
+}
+
+.icons #switch .addwebpanel-wrapper > button, 
+.icons #switch > .button-toolbar, 
+.icons #switch > * > .button-toolbar, 
+.icons #switch > button{
+    border-radius:var(--radiusCap);
+}
+
+/*rounded webview*/
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack{
+    border-radius:var(--radiusCap);
+    box-shadow: 0px 0px 6px #00000015;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .webpageview > .row-wrapper{
+    border-radius:var(--radiusCap); 
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).theme-dark .webpageview > .row-wrapper{
+    border: 1px solid #ffffff17;
+}
+
+
+/*tile*/
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-tile{
+    border:2px solid var(--colorBg);
+    border-radius:10px;
+    margin:2px;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webview-container:has(#webpage-stack .mosaic.visible){
+    box-shadow: none;
+    padding:0px;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line:before, .mosaic-split .mosaic-split-line:after{
+    background:transparent;
+} 

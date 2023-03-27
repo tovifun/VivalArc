@@ -1,4 +1,5 @@
-[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ/?vd_source=103a1da26948412544dd2b203b193997) | [📝设置方式-文字版](doc_将Vivaldi配置成Arc.md) | [📝EN](doc_configure-vivaldi.md)
+[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ) | [📝设置方式-文字版](configure-vivaldi-cn.md) | [📝EN](configure-vivaldi.md) | [🧑‍💻ChangeLog](changelog.md)
+
 
 
 ### 💡README：
@@ -14,12 +15,9 @@
 ### 2. Open Vivaldi Settings
 
 > During the setup process, you can search for keywords in the upper left corner of the "Settings" page to quickly locate
-
-- **Appearance** > Window Appearance > `Check 'Open Settings in a Tab'`
+- **Appearance** > Status Bar > `Status Info Overlay`
 - **Tabs** > Tab bar position > `Left`
 - **Tabs** > Tab Stacking > `According`
-- **Tabs** > Pinned Tabs > `Check 'Show Separator Below Pinned Tabs'`
-- **Tabs** > Tab Handling > `Uncheck ‘Keep Window Open when Last Tab is Closed’`
 - **Panel** > Panel Options > `Check 'Floating Panel'`
 - **Address Bar** > `Uncheck 'Show Address Bar'`
 - **Quick Commands** > `Check 'Open Links In New Tab'`
@@ -28,8 +26,8 @@
     - Quick Command > `Command + T`
     - Save Page As > Remove it
     - Tab Bar > `Command + S`
-    - Address Bar（） > `Command + B`
-    - 创建书签 > Remove it
+    - Address Bar > `Command + B` (Remove Booksmarks shortcuts first in Windows)
+    - Create Bookmark > Remove it
     - Pin / Unpin Tab > `Command + D`
     - Print > Remove it
     - Panel > `Comand + P`

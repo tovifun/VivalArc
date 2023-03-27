@@ -1,16 +1,23 @@
 ## [VivalArc](https://vivalarc.tovi.fun)
-这个项目主要包含一个 CSS 文件和一个 Vivaldi 主题。通过几步简单的设置，可以将 Vivaldi 魔改成 Arc。
+这个项目主要包含一套 CSS 文件和一个 Vivaldi 主题。通过几步简单的设置，可以将 Vivaldi 魔改成 Arc。
+
+[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ) | [📝设置方式-文字版](configure-vivaldi-cn.md) | [📝EN](configure-vivaldi.md) | [🧑‍💻更新日志](changelog-cn.md)
 
 ![截屏预览](assets/vivalarc_screenshot.jpg)
 
+## 2023.03.27 更新
 
-### 2022.10.01 更新
-style.css 文件里增加了另外两个样式表，默认是注释掉的。可以根据自己的需要进行选用。
-- 如果你习惯开启面板，则取消注释 panel_mode.sss 
-- 如果你想显示新建标签按钮，则取消注释 new_tab.css
+距离第一次发布这个Vivaldi配置已经过了半年多，这次更新修复了几个大家提到比较多的问题，包括：
+- 全屏时隐藏四周的边框；
+- 显示了标题栏，左上角的三个按钮常驻了（这个最多人反馈说找不到；
+- 去除了Tab bar的拖拽（之前开启拖拽导致了很多意想不到的bug；
+- 简化了样式表
+    - 之前的CSS样式为了尽可能接进Arc的外观而自订了太多，这样导致Vivaldi更新时，会有些样式失效。所以这次定了一个原则，不一昧追求样式完美，而是尽可能使用用少的CSS ；
+- 这次将样式表有两个供大家选用：
+    - main_arc.css, 这个在 minimal 的基础上增加了一些样式，往 Arc 的外观上靠，是默认的；
+    - main_minimal.css，样式表比较少，但只打开这个已经有比较好的效果了，如果不想改动太多，可以选择使用这个；
 
-
-## 为什么做这个
+## 2022.08.28 起因：为什么做这个
 
 大概说一下背景，我主力使用 Vivaldi 浏览器应该有一年，前段时间体验了还在内测中的 Arc 浏览器，差不多两个星期。这两个星期的 Arc 使用体验确实挺好的，交互很符合直觉，UI也非常的好看。
 
@@ -19,5 +26,3 @@ style.css 文件里增加了另外两个样式表，默认是注释掉的。可�
 后来了解到 Vivaldi 居然还可以使用 CSS 自定义 UI ，于是尝试了一下，最后就有了这个网页所介绍的配置。
 
 虽然最后的效果比不上 Arc 的 UI 和细节，但是这套配置体验下来，我觉得能够大致还原 Arc 的使用体验。所以想将这套配置分享给大家，如果你还在等待 Arc 的测试，或者因为 Arc 过于占内存，想试试别的选择，那么可以尝试使用一下我的这个配置。
-
-[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ/?vd_source=103a1da26948412544dd2b203b193997) | [📝设置方式-文字版](doc_将Vivaldi配置成Arc.md) | [📝EN](doc_configure-vivaldi.md)
