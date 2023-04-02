@@ -1,0 +1,8 @@
+.tabs-left .toolbar-tabbar.sync-and-trash-container, 
+.tabs-right .toolbar-tabbar.sync-and-trash-container{
+    display:none;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) .toolbar > .newtab > button .button-icon{
+    display:none;
+}

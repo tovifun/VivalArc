@@ -1,5 +1,11 @@
 /* 
 You can add references to your own .css stylessheets in this file
+
+
+有小伙伴反馈前几天的更新Tab的元素加回去之后又显得太复杂了。
+于是加了一个小样式表 sub_arc.css, 这个作用是隐藏Tab里的新建标签按钮和底下的同步按钮和垃圾筒按钮。
+如果你想要这几个按钮不要隐藏，则注释掉这个样式表即可。
+
 */
-/* @import url("css/main_minimal.css"); */
 @import url("css/main_arc.css");
+@import url("css/sub_arc.css");
