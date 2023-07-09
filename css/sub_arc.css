@@ -3,6 +3,6 @@
     display:none;
 }
 
-#browser:not(.tabs-top):not(.tabs-bottom) .toolbar > .newtab > button .button-icon{
+#browser:not(.tabs-top):not(.tabs-bottom) .toolbar > .newtab > button{
     display:none;
 }

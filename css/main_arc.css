@@ -8,6 +8,19 @@
     min-height:10px !important;
 }
 
+.mainbar{
+    background:transparent;
+}
+
+#browser.mac.address-top .toolbar:has(.window-buttongroup.on-mainbar){
+    padding: 0 calc(8px / var(--uiZoomLevel));
+    min-height: calc(44px / var(--uiZoomLevel));
+}
+
+.address-top .mainbar{
+    border:none;
+}
+
 #browser:not(.address-top).tabs-bottom > #header,
 #browser.fullscreen > #header,
 .color-behind-tabs-off:not(.is-settingspage)#browser.tabs-bottom #header
@@ -15,11 +28,34 @@
     display: none;
 }
 
+/*address bar*/
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar .toolbar-extensions, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar .page-zoom-controls, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar
+{
+    background:transparent;
+    border:none;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off.address-top .mainbar > .toolbar-mainbar .toolbar-extensions:before, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off.address-top .mainbar > .toolbar-mainbar .page-zoom-controls:before, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off.address-top .mainbar > .toolbar-mainbar:before{
+    background-color:transparent;
+}
+
+.color-behind-tabs-off .ExtensionIcon--Hidden{
+    background-color:var(--colorAccentBgAlphaHeavy)
+}
+
+.color-behind-tabs-off .tab-indicator{
+   background-color:var(--colorAccentFgAlpha)
+}
+
 /* for mac&win */
 
 #browser.mac:not(.tabs-top):not(.tabs-bottom) #titlebar.tabless .window-buttongroup{
     display:flex;
-    margin-top: 4px;
+    margin-top: 10px;
     margin-left: 10px;
 }
 
@@ -30,9 +66,13 @@
     flex:0 0 7px;
 }
 
-#browser.mac:not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup img,
-#browser.mac:not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup svg{
-    filter: grayscale(1) opacity(0.4);
+#browser.mac:not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup,
+#browser.mac:not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup{
+    filter:brightness(0) grayscale(1)  opacity(0.08);
+}
+#browser.mac:not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup:hover,
+#browser.mac:not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup:hover{
+    filter:brightness(1) opacity(0.7);
 }
 
 #browser.win:not(.tabs-top):not(.tabs-bottom) .window-buttongroup{
@@ -54,9 +94,20 @@
 
 /*tabbar left & tabbar right*/
 
+
 .transparent-tabbar.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button,
 .transparent-tabbar.tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button{
     background:transparent;
+    margin-top:6px;
+}
+
+.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button > button,
+.tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button > button{
+    padding:2px;
+}
+
+.button-toolbar.button-menu .button-toolbar-menu-indicator.disabled{
+    opacity:0.45;
 }
 
 #browser.transparent-tabbar #tabs-tabbar-container.left, 
@@ -70,6 +121,16 @@
 #browser.transparent-tabbar #tabs-tabbar-container.right  ::-webkit-scrollbar
 {
     display: none;
+}
+
+#tabs-subcontainer.left, #tabs-subcontainer.right,
+.color-behind-tabs-off #tabs-subcontainer.left, .color-behind-tabs-off #tabs-subcontainer.right{
+    box-shadow:none;
+}
+
+.color-behind-tabs-off #tabs-subcontainer.left, .transparent-tabbar #tabs-subcontainer.left,
+.color-behind-tabs-off #tabs-subcontainer.right, .transparent-tabbar #tabs-subcontainer.right{
+    background-color:transparent;
 }
 
 /*panel*/
