@@ -1,4 +1,6 @@
-/* transparent header*/
+/*update:2023.07.23*/
+
+/* transparent&narrow header*/
 #browser:not(.address-top) > #header,
 .color-behind-tabs-off:not(.is-settingspage)#browser:not(.tabs-top):not(.tabs-bottom) #header
 {
@@ -8,27 +10,27 @@
     min-height:10px !important;
 }
 
-.mainbar{
-    background:transparent;
-}
-
-#browser.mac.address-top .toolbar:has(.window-buttongroup.on-mainbar){
-    padding: 0 calc(8px / var(--uiZoomLevel));
-    min-height: calc(44px / var(--uiZoomLevel));
-}
-
-.address-top .mainbar{
-    border:none;
-}
-
-#browser:not(.address-top).tabs-bottom > #header,
 #browser.fullscreen > #header,
+#browser:not(.address-top).tabs-bottom > #header,
+#browser.tabs-off.address-top > #header,
 .color-behind-tabs-off:not(.is-settingspage)#browser.tabs-bottom #header
 {
     display: none;
 }
 
 /*address bar*/
+
+.color-behind-tabs-off.address-top#browser:not(.tabs-top):not(.tabs-bottom) .mainbar{
+    background:transparent;
+    border:none;
+}
+
+#browser.mac.address-top .toolbar:has(.window-buttongroup.on-mainbar){
+    padding: 0 calc(8px / var(--uiZoomLevel));
+    min-height: calc(40px / var(--uiZoomLevel));
+    
+}
+
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar .toolbar-extensions, 
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar .page-zoom-controls, 
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar
@@ -37,32 +39,55 @@
     border:none;
 }
 
+
+
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off.address-top .mainbar > .toolbar-mainbar .toolbar-extensions:before, 
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off.address-top .mainbar > .toolbar-mainbar .page-zoom-controls:before, 
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off.address-top .mainbar > .toolbar-mainbar:before{
     background-color:transparent;
 }
 
-.color-behind-tabs-off .ExtensionIcon--Hidden{
-    background-color:var(--colorAccentBgAlphaHeavy)
+
+.disable-titlebar .toolbar-mainbar .toolbar-extensions > .button-toolbar > button, 
+.disable-titlebar .toolbar-mainbar .page-zoom-controls > .button-toolbar > button, 
+.disable-titlebar .toolbar-mainbar > .button-toolbar > button, 
+.disable-titlebar .toolbar-mainbar .toolbar-extensions > .toolbar-group > .button-toolbar > button, 
+.disable-titlebar .toolbar-mainbar .page-zoom-controls > .toolbar-group > .button-toolbar > button, 
+.disable-titlebar .toolbar-mainbar > .toolbar-group > .button-toolbar > button{
+    border-radius:var(--radiusCap);
 }
 
-.color-behind-tabs-off .tab-indicator{
-   background-color:var(--colorAccentFgAlpha)
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .ExtensionIcon{
+    border-radius:var(--radiusCap);
+}
+
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .ExtensionIcon:hover{
+    background-color:var(--colorAccentBgAlphaHeavy);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .ExtensionIcon--Hidden{
+    background-color:var(--colorAccentBgAlphaHeavy);
+    border-radius:var(--radiusCap);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .ExtensionIcon--Hidden:hover,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .ExtensionIcon--Hidden:active{
+    background-color:var(--colorAccentBgAlpha);
 }
 
 /* for mac&win */
 
 #browser.mac:not(.tabs-top):not(.tabs-bottom) #titlebar.tabless .window-buttongroup{
     display:flex;
-    margin-top: 10px;
+    margin-top:4px;
     margin-left: 10px;
 }
 
 #browser.mac:not(.tabs-top):not(.tabs-bottom) #header .window-buttongroup button{
     width:7px;
     height:7px;
-    margin-right:3px;
+    margin-right:2px;
     flex:0 0 7px;
 }
 
@@ -76,7 +101,9 @@
 }
 
 #browser.win:not(.tabs-top):not(.tabs-bottom) .window-buttongroup{
-    right:10px;
+    color:var(--colorFgFaded);
+    line-height:10px;
+    margin-right:10px;
 }
 
 #browser.win:not(.tabs-top):not(.tabs-bottom) .window-buttongroup button,
@@ -86,19 +113,32 @@
     margin:0;
 }
 
-#browser:not(.tabs-top):not(.tabs-bottom).win .window-buttongroup button.window-minimize svg,
-#browser:not(.tabs-top):not(.tabs-bottom).win .window-buttongroup button.window-maximize svg,
-#browser:not(.tabs-top):not(.tabs-bottom).win .window-buttongroup button.window-close svg{
-    fill:transparent;
+#browser.win .window-buttongroup button.window-minimize svg,
+#browser.win .window-buttongroup button.window-maximize svg,
+#browser.win .window-buttongroup button.window-close svg{
+    scale:0.7;
 }
 
 /*tabbar left & tabbar right*/
-
+#browser:not(.theme-dark) #tabs-tabbar-container.top{
+    box-shadow:none;
+}
 
 .transparent-tabbar.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button,
 .transparent-tabbar.tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button{
     background:transparent;
-    margin-top:6px;
+    margin-top:2px;
+
+}
+
+.transparent-tabbar.tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button{
+    margin-top:0px;
+}
+
+#browser.win.transparent-tabbar.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button,
+#browser.win.transparent-tabbar.tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button{
+    margin-top:0px;
+
 }
 
 .tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button > button,
@@ -166,17 +206,19 @@
 .icons #switch > .button-toolbar, 
 .icons #switch > * > .button-toolbar, 
 .icons #switch > button{
-    border-radius:var(--radiusCap);
+    border-radius:calc(var(--radiusCap));
 }
 
 /*rounded webview*/
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack{
     border-radius:var(--radiusCap);
     box-shadow: 0px 0px 6px #00000015;
+
 }
 
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .webpageview > .row-wrapper{
     border-radius:var(--radiusCap); 
+    
 }
 
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).theme-dark .webpageview > .row-wrapper{
