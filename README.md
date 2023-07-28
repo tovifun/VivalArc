@@ -1,33 +1,62 @@
 ## [VivalArc](https://arc.tovi.fun)
-这个项目主要包含一套 CSS 文件和一个 Vivaldi 主题。通过几步简单的设置，可以将 Vivaldi 魔改成 Arc。
+This project mainly includes a set of CSS files and a Vivaldi theme. With a few simple steps of configuration, you can modify Vivaldi into Arc style.
 
-[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ) | [📝设置方式-文字版](./docs/configure-vivaldi-cn.md) | [📝EN](./docs/configure-vivaldi.md) | [🧑‍💻更新日志](./docs/changelog-cn.md)
+[📝中文介绍和配置方式](./README-cn.md) | [🧑‍💻ChangeLog](./docs/changelog.md)
 
-![截屏预览](assets/vivalarc_screenshot.jpg)
+ ![Screenshot](assets/vivalarc_screenshot.jpg)
 
-## 2023.07.23
-- Windows上好几个小伙伴反馈看不到那三个窗口操作按钮，表示非常别扭，于是这次还是加了回去。（感谢B站的 @吅子 同学，他给我提供了这一块的CSS参考。
-- Mac上左上角的三个按钮也加了回来，不过为了美观做了灰色弱化显示，鼠标悬停时才是彩色的
-- 主要就是这两个，还有一些别的小更新就不说了
+---
 
-## 2023.03.27 更新
+## 💡 README：
 
-距离第一次发布这个Vivaldi配置已经过了半年多，这次更新修复了几个大家提到比较多的问题，包括：
-- 全屏时隐藏四周的边框；
-- 显示了标题栏，左上角的三个按钮常驻了（这个最多人反馈说找不到；
-- 去除了Tab bar的拖拽（之前开启拖拽导致了很多意想不到的bug；
-- 简化了样式表
-    - 之前的CSS样式为了尽可能接进Arc的外观而自订了太多，这样导致Vivaldi更新时，会有些样式失效。所以这次定了一个原则，不一昧追求样式完美，而是尽可能使用用少的CSS ；
-- 这次将样式表有两个供大家选用：
-    - main_arc.css, 这个在 minimal 的基础上增加了一些样式，往 Arc 的外观上靠，是默认的；
-    - main_minimal.css，样式表比较少，但只打开这个已经有比较好的效果了，如果不想改动太多，可以选择使用这个；
+1. It is essentially changing the appearance using the Vivaldi browser’s custom UI MOD feature
+2. This configuration also works on Windows. In the process of setting the shortcut keys, simply replace `Command` with `Ctrl`
+3. If you want to return to the original effect, you just need to delete the local CSS
 
-## 2022.08.28 起因：为什么做这个
+---
 
-大概说一下背景，我主力使用 Vivaldi 浏览器应该有一年，前段时间体验了还在内测中的 Arc 浏览器，差不多两个星期。这两个星期的 Arc 使用体验确实挺好的，交互很符合直觉，UI也非常的好看。
+## 🛠️ Configuration：
 
-不过最后还是换回去了 Vivaldi，主要原因是在使用Arc 的过程中，它崩溃了几次。
+### 1. Install Vivaldi Browser
 
-后来了解到 Vivaldi 居然还可以使用 CSS 自定义 UI ，于是尝试了一下，最后就有了这个网页所介绍的配置。
+- Install a [Vivaldi](https://vivaldi.com) browser first, no doubt.
 
-虽然最后的效果比不上 Arc 的 UI 和细节，但是这套配置体验下来，我觉得能够大致还原 Arc 的使用体验。所以想将这套配置分享给大家，如果你还在等待 Arc 的测试，或者因为 Arc 过于占内存，想试试别的选择，那么可以尝试使用一下我的这个配置。
+### 2. Open Vivaldi Settings
+
+> During the setup process, you can search for keywords in the upper left corner of the "Settings" page to quickly locate
+- **Appearance** > Status Bar > `Status Info Overlay`
+- **Tabs** > Tab bar position > `Left`
+- **Tabs** > Tab Stacking > `According`
+- **Panel** > Panel Options > `Check 'Floating Panel'`
+- **Address Bar** > `Uncheck 'Show Address Bar'`
+- **Quick Commands** > `Check 'Open Links In New Tab'`
+- **Keyboard** (Set the necessary keyboard shortcuts)
+    - New Tab > Remove it
+    - Quick Command > `Command + T`
+    - Save Page As > Remove it
+    - Tab Bar > `Command + S`
+    - Address Bar > `Command + B` (Remove Booksmarks shortcuts first in Windows)
+    - Create Bookmark > Remove it
+    - Pin / Unpin Tab > `Command + D`
+    - Print > Remove it
+    - Panel > `Comand + P`
+
+### 3. Custom UI Mod
+
+- [Download the mod](https://github.com/tovifun/VivalArc/archive/refs/heads/main.zip), extract it to anywhere safe on your PC
+- **Themes > Open Theme** >  ArcLight.zip
+- Open `vivaldi://experiments` and enable `"Allow for using CSS modifications"`
+- Open Settings > Appearance > Custom UI MOD
+- Select the folder where you've extracted it
+- Restart Vivaldi
+
+---
+
+## 💌 Thanks for：
+- [@clementpoiret](https://github.com/clementpoiret) added [ArcDark Theme](https://github.com/tovifun/VivalArc/pull/5)
+
+---
+
+## 🧑‍💻 Beautiful Screenshots from：
+- Twitter [@vivaldi_fr](https://twitter.com/vivaldi_fr/status/1684643796942815233)
+- Github [@clementpoiret](https://github.com/tovifun/VivalArc/pull/5)

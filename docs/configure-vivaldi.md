@@ -1,8 +1,4 @@
-[📺设置方式-视频版](https://www.bilibili.com/video/BV1fe4y1a7WQ) | [📝设置方式-文字版](configure-vivaldi-cn.md) | [📝EN](configure-vivaldi.md) | [🧑‍💻ChangeLog](changelog.md)
-
-
-
-### 💡README：
+## This file has been archived, please go back to [Readme](../README.md)
 
 1. It is essentially changing the appearance using the Vivaldi browser’s custom UI MOD feature
 2. If you want to return to the original effect, you just need to delete the local CSS
