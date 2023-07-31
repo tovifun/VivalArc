@@ -1,6 +1,6 @@
-/*update:2023.07.23*/
+/*update:2023.07.31*/
 
-/* transparent&narrow header*/
+/*transparent&narrow header*/
 #browser:not(.address-top) > #header,
 .color-behind-tabs-off:not(.is-settingspage)#browser:not(.tabs-top):not(.tabs-bottom) #header
 {
@@ -20,6 +20,10 @@
 
 /*address bar*/
 
+.UrlBar-SearchField, .UrlBar-AddressField, .SearchField {
+    background-color: rgba(var(--colorBg), 0.1);
+}
+
 .color-behind-tabs-off.address-top#browser:not(.tabs-top):not(.tabs-bottom) .mainbar{
     background:transparent;
     border:none;
@@ -28,7 +32,6 @@
 #browser.mac.address-top .toolbar:has(.window-buttongroup.on-mainbar){
     padding: 0 calc(8px / var(--uiZoomLevel));
     min-height: calc(40px / var(--uiZoomLevel));
-    
 }
 
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar .toolbar-extensions, 
@@ -241,8 +244,19 @@
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line,
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line:before, .mosaic-split .mosaic-split-line:after{
     background:transparent;
-} 
+}
 
+/*tab stack frame*/
+.dim-blurred:not(.hasfocus) .svg-tab-stack, .dim-blurred:not(.hasfocus) .stack-frame {
+    stroke: var(--colorBorder);
+}
+.svg-tab-stack, .stack-frame {
+    stroke: var(--colorBgIntense);
+}
+.svg-tab-stack line, .svg-tab-selection line, .svg-tab-stack rect, .svg-tab-selection rect {
+    fill: none;
+    stroke-width: 1px;
+}
 
 /*webview-container*/
 
