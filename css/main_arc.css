@@ -1,5 +1,9 @@
 /*update:2023.07.31*/
 
+:root{
+    --window-border:10px;
+}
+
 /*transparent&narrow header*/
 #browser:not(.address-top) > #header,
 .color-behind-tabs-off:not(.is-settingspage)#browser:not(.tabs-top):not(.tabs-bottom) #header
@@ -7,7 +11,7 @@
     box-shadow:none;
     background:transparent;
     color:transparent;
-    min-height:10px !important;
+    min-height:var(--window-border) !important;
 }
 
 #browser.fullscreen > #header,
@@ -19,9 +23,22 @@
 }
 
 /*address bar*/
+#browser:not(.tabs-top):not(.tabs-bottom).address-top .UrlBar-SearchField,
+#browser:not(.tabs-top):not(.tabs-bottom).address-top .UrlBar-AddressField, 
+#browser:not(.tabs-top):not(.tabs-bottom).address-top .SearchField {
+    background-color: var(--colorBgAlphaHeavier);
+}
 
-.UrlBar-SearchField, .UrlBar-AddressField, .SearchField {
-    background-color: rgba(var(--colorBg), 0.1);
+#browser:not(.tabs-top):not(.tabs-bottom).dim-blurred:not(.hasfocus) .UrlBar-AddressField, 
+#browser:not(.tabs-top):not(.tabs-bottom).dim-blurred:not(.hasfocus) .SearchField, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .SearchField, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .UrlBar-AddressField {
+    border: 1px solid var(--colorBgAlphaHeavier);
+}
+
+.UrlFragment-Wrapper--ShouldHighlight{
+    --HighlightColor: var(--colorFgIntense);
+    --LowlightColor: var(--colorFgFadedMore);
 }
 
 .color-behind-tabs-off.address-top#browser:not(.tabs-top):not(.tabs-bottom) .mainbar{
@@ -84,7 +101,7 @@
 #browser.mac:not(.tabs-top):not(.tabs-bottom) #titlebar.tabless .window-buttongroup{
     display:flex;
     margin-top:4px;
-    margin-left: 10px;
+    margin-left: var(--window-border);
 }
 
 #browser.mac:not(.tabs-top):not(.tabs-bottom) #header .window-buttongroup button{
@@ -105,14 +122,14 @@
 
 #browser.win:not(.tabs-top):not(.tabs-bottom) .window-buttongroup{
     color:var(--colorFgFaded);
-    line-height:10px;
-    margin-right:10px;
+    line-height:var(--window-border);
+    margin-right:var(--window-border);
 }
 
 #browser.win:not(.tabs-top):not(.tabs-bottom) .window-buttongroup button,
 #browser.win:not(.tabs-top):not(.tabs-bottom) .window-buttongroup button.window-close{
     width:20px;
-    height:10px;
+    height:var(--window-border);
     margin:0;
 }
 
@@ -274,11 +291,11 @@
 }
 
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #webview-container{
-    margin:0px 10px 10px 10px;
+    margin:0px var(--window-border) var(--window-border) var(--window-border);
 }
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-left #webview-container{
-    margin:0px 10px 10px 0px;
+    margin:0px var(--window-border) var(--window-border) var(--window-border);
 }
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-right #webview-container{
-    margin:0px 0 10px 10px;
+    margin:0px 0 var(--window-border) var(--window-border);
 }
