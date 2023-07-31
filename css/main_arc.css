@@ -294,8 +294,8 @@
     margin:0px var(--window-border) var(--window-border) var(--window-border);
 }
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-left #webview-container{
-    margin:0px var(--window-border) var(--window-border) var(--window-border);
+    margin:0px var(--window-border) var(--window-border) 0px;
 }
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-right #webview-container{
-    margin:0px 0 var(--window-border) var(--window-border);
+    margin:0px 0px var(--window-border) var(--window-border);
 }
