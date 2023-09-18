@@ -1,3 +1,20 @@
+## 2023.09.17
+- This update includes many changes. I have reviewed every line of code to make the styles more refined.
+- The main updates are as follows:
+  - The shadows on the webview areas have been made more subtle.
+  - Panel optimization for more consistent styles across various configurations.
+  - Uniform colors for the Tabbar and Menubar.
+- For those who want to customize more, I was planning to create a video demonstration, but the video isn't ready yet. You can follow my [Youtube](https://www.youtube.com/channel/UCbmcO7HxXDYqEZFb-QgmRsw) for updates. Once the demo video is ready, I will post it there. For now, you can open `css/main.css` to make some additional configurations. Here are some brief instructions:
+  - `--window-border` allows you to set the thickness of the border around the window. I recommend setting it between 4px and 16px. (Setting it to 0 means no border.)
+  - `--window-button-opacity` lets you adjust the opacity of the three buttons in the top right corner for Windows users. I've set it to 0.3 by default. You can set it any num between 0 and 1. Higher values make the buttons more visible. If set to around 0.1, they become almost invisible but still appear on mouse hover. If you want a cleaner header, you can set it below 0.1.
+  - If you find the drag area for the top header too small, you can increase the `--window-header` value, or you can use the following method:
+  - Change the `webkit-app-region` of `tabbar-wrapper` from `nodrag` to `drag` to make the entire tabbar draggable. However, some users have reported that dragging in this area may affect the left-side panel (the right-side panel should be less problematic, as I have set it to the right myself). If you encounter any issues during testing, please provide feedback.
+  - Please note that if you make the tabbar area draggable, the double-click to create a new tab feature in the tabbar area will be disabled. You can comment out the "display new tab button" above to add a new tab button to the tabbar area.
+- **Note: After making CSS modifications, you will need to restart your browser for the changes to take effect.**
+
+ ![Annotation](./images/annotate-config.png)
+
+
 ## 2023.07.23 
 - Several users on Windows reported that they couldn't see the three window buttons, which was very awkward, so I added them back this time.
 - The three buttons in the upper-left corner of the Mac are also added back, but for the sake of aesthetics, they are grayed out, and only colored when the mouse hovers over them.
