@@ -1,4 +1,11 @@
-## 2023.09.17
+## 🗓️ 2023.11.09
+- Increase the gap on both sides of the Tabbar.
+- The Tabbar is now draggable by default (if you don't want it to be draggable, you can change `.tabbar-wrapper` to `no-drag` in file `main_arc.css`.)
+- The pop-up settings page now has a proper title bar (in previous versions, the close button was very small).
+- Two new themes added, `theme-gradientGreenLight` and `theme-gradientPinkLight`.
+- One thing I still want to modify is the Tabbar, it's still a bit rough at the moment, and it should be specifically optimized in future versions.
+
+## 🗓️ 2023.09.17
 - This update includes many changes. I have reviewed every line of code to make the styles more refined.
 - The main updates are as follows:
   - The shadows on the webview areas have been made more subtle.
@@ -15,11 +22,11 @@
  ![Annotation](./images/annotate-config.png)
 
 
-## 2023.07.23 
+## 🗓️ 2023.07.23 
 - Several users on Windows reported that they couldn't see the three window buttons, which was very awkward, so I added them back this time.
 - The three buttons in the upper-left corner of the Mac are also added back, but for the sake of aesthetics, they are grayed out, and only colored when the mouse hovers over them.
 
-## 2023.03.12
+## 🗓️ 2023.03.12
 - Optimization
     - Hide the border around the window when in full screen mode;
     - Show the title bar and keep the three buttons in the upper-left corner visible (many users had trouble finding them);
@@ -27,7 +34,7 @@
     - Simplify the style sheet
         - Previously, too many custom CSS styles were used to make the appearance match Arc as closely as possible, which caused some styles to break when Vivaldi was updated. Therefore, a principle was established this time to not blindly pursue perfect styling, but rather use as little CSS as possible;
 
-## 2022.08.28 Background: Why I made this
+## 🗓️ 2022.08.28 Background: Why I made this
 To give some background, I've been using the Vivaldi browser as my primary browser for about a year now. Recently, I had the opportunity to try out the Arc browser, which was still in beta testing at the time, for about two weeks. The experience of using Arc during those two weeks was really good - the interactions felt intuitive, and the UI was very aesthetically pleasing.
 
 However, I eventually switched back to Vivaldi primarily because Arc crashed a few times during use.

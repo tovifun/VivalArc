@@ -1,37 +1,36 @@
-/*update:2023.09.17*/
+/*update:2023.11.09*/
 :root{
     --window-border:10px; /* window border, recommend 4px~16px */
-    --window-header:calc(var(--window-border) + 2px); /* title bar extra height */
+    --window-header:calc(var(--window-border) + 0px); /* title bar extra height */
     --window-button-opacity:0.3;
+    --tab-padding:calc(var(--window-border) / 2);
     --colorToviTransparent:transparent;
     --webview-shadow-light:0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 0px var(--window-header) 0px rgba(0, 0, 0, 0.10);
     --webview-shadow-dark:0px 2px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 8px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1.2px #ffffff18;
 }
 
-/*display new tab button*/
+/*displayNewtabButton*/
 #browser:not(.tabs-top):not(.tabs-bottom) .toolbar > .newtab > button{
     display:none;
 }
-
-/*tabbar drag*/
-.tabbar-wrapper{
-    -webkit-app-region: no-drag;
-}
-
-/* display -> none*/
-:not(.tabs-bottom):not(.tabs-top)#browser > footer{
-    display:none;
-}
-
 .tabs-left .toolbar-tabbar.sync-and-trash-container, 
 .tabs-right .toolbar-tabbar.sync-and-trash-container{
     display:none;
 }
 
+/*tabbarDrag*/
+.tabbar-wrapper{
+    -webkit-app-region: drag;
+}
+
+/* footerDisplay*/
+:not(.tabs-bottom):not(.tabs-top)#browser > footer{
+    display:none;
+}
 
 /*header*/
-#browser:not(.address-top) > #header,
-#browser:not(.tabs-top) #header,
+#browser:not(.is-settingspage):not(.address-top) > #header,
+#browser:not(.is-settingspage):not(.tabs-top) #header,
 .color-behind-tabs-off:not(.is-settingspage)#browser:not(.tabs-top):not(.tabs-bottom) #header
 {
     box-shadow:none;
@@ -41,16 +40,16 @@
     overflow: visible;
 }
 
-#browser.fullscreen > #header,
-#browser:not(.address-top).tabs-bottom > #header,
-#browser.tabs-off.address-top > #header,
+#browser:not(.is-settingspage).fullscreen > #header,
+#browser:not(.is-settingspage):not(.address-top).tabs-bottom > #header,
+#browser:not(.is-settingspage).tabs-off.address-top > #header,
 .color-behind-tabs-off:not(.is-settingspage)#browser.tabs-bottom #header
 {
     display: none;
 }
 
 /* mac&win window-buttongroup */
-#browser.mac:not(.tabs-top):not(.tabs-bottom) #titlebar.tabless .window-buttongroup{
+#browser.mac:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #titlebar.tabless .window-buttongroup{
     display:flex;
     margin-top: calc((var(--window-header) / 2) - 2px);
     margin-left: calc(var(--window-border) + 2px);
@@ -58,7 +57,7 @@
     align-items:center;
 }
 
-#browser.mac:not(.tabs-top):not(.tabs-bottom) #header .window-buttongroup button{
+#browser.mac:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header .window-buttongroup button{
     width:calc(var(--window-header) - 0px);
     height:calc(var(--window-header) - 0px);
     padding-right:4px;
@@ -66,14 +65,14 @@
     flex:0 0 calc(var(--window-border) - 4px);
 }
 
-#browser.mac:not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup{
+#browser.mac:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup{
     filter:brightness(0) grayscale(1)  opacity(0.1);
 }
-#browser.mac:not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup:hover{
+#browser.mac:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom)  #header .window-buttongroup:hover{
     filter:brightness(1) opacity(0.7);
 }
 
-#browser.win:not(.tabs-top) #titlebar .vivaldi{
+#browser.win:not(.is-settingspage):not(.tabs-top) #titlebar .vivaldi{
     opacity:var(--window-button-opacity);
     color: var(--colorFgFadedMost);
     scale: calc(0.6 / var(
@@ -82,29 +81,29 @@
     margin-top: -4px;
 }
 
-#browser.win:not(.tabs-top) #titlebar .vivaldi:hover{
+#browser.win:not(.is-settingspage):not(.tabs-top) #titlebar .vivaldi:hover{
     opacity:1;
 }
 
-#browser.win:not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup{
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup{
     opacity:var(--window-button-opacity);
     color:var(--colorFgFaded);
     line-height:var(--window-header);
 }
 
-#browser.win:not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup:hover{
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup:hover{
     opacity:1;
 }
 
-#browser.win:not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button,
-#browser.win:not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-close{
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button,
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-close{
     width: calc(var(--window-header) * 2);
     height:var(--window-header);
 }
 
-#browser.win:not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-minimize svg,
-#browser.win:not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-maximize svg,
-#browser.win:not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-close svg{
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-minimize svg,
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-maximize svg,
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-close svg{
     scale:0.7;
 }
 
@@ -199,14 +198,14 @@
     background:var(--colorToviTransparent);
 }
 
-#browser:not(.tabs-top):not(.tabs-bottom).transparent-tabbar .button-toolbar.workspace-popup.tabbar-workspace-button{
+#browser:not(.tabs-top):not(.tabs-bottom).transparent-tabbar .button-toolbar.workspace-popup.tabbar-workspace-button.button-menu{
     color:var(--colorFg);
 }
 
 #app .tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button button, 
 #app .tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button button{
-    padding-left:2px;
-    padding-right:2px;
+    padding-left:4px;
+    padding-right:4px;
 }
 
 .button-toolbar.button-menu .button-toolbar-menu-indicator.disabled{
@@ -214,6 +213,26 @@
 }
 
 /*tabbar left & tabbar right*/
+.tabs-left .inner > .tabbar-wrapper:not(:has(.tab-small)), 
+.tabs-right .inner > .tabbar-wrapper:not(:has(.tab-small)){
+    margin:0 var(--tab-padding);
+}
+
+.tabs-left .accordion-toggle-arrow, 
+.tabs-right .accordion-toggle-arrow{
+    max-width:calc(var(--Width) - 16px + (var(--tab-padding) * 2));
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) .tab-position .tab{
+    color:var(--colorFg);
+}
+
+.tabs-left .tab-position .tab > .tab-header, 
+.tabs-right .tab-position .tab > .tab-header
+{
+    margin:0px;
+}
+
 .tabbar-workspace-button + #tabs-tabbar-container.left, 
 .tabbar-workspace-button + #tabs-tabbar-container.right{
     padding-top:4px;
@@ -224,7 +243,6 @@
     box-shadow:none;
 }
 
-
 #browser.transparent-tabbar #tabs-tabbar-container.left, 
 #browser.transparent-tabbar #tabs-tabbar-container.right,
 #browser:not(.transparent-tabbar) #tabs-tabbar-container
@@ -232,10 +250,6 @@
     background: var(--colorToviTransparent);
     border: none;
     box-shadow:none;
-}
-
-#browser:not(.tabs-top):not(.tabs-bottom) .tab-position .tab{
-    color:var(--colorFg);
 }
 
 /*panel*/
@@ -311,7 +325,6 @@
     margin-right:0px;
 }
 
-
 /*rounded webview*/
 #main, #main > .inner{
     overflow:visible;    
@@ -333,19 +346,24 @@
     box-shadow: var(--webview-shadow-dark);
 }
 
-#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack:has(.mosaic.visible){
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack:has(.tiled .visible),
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack:has(.mosaic .visible){
     box-shadow: none;
 }
 
 /*tile*/
-#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webview-container:has(#webpage-stack .mosaic.visible){
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webview-container:has(#webpage-stack .tiled .visible),
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webview-container:has(#webpage-stack .mosaic .visible){
     box-shadow: none;
     padding:0px;
 }
 
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line,
-#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line:before, .mosaic-split .mosaic-split-line:after{
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line:before, .mosaic-split .mosaic-split-line:after,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .tile
+{
     background:transparent;
+    box-shadow:none;
 }
 
 /* tab stack frame */
@@ -357,7 +375,7 @@
 }
 .svg-tab-stack line, .svg-tab-selection line, .svg-tab-stack rect, .svg-tab-selection rect {
     fill: none;
-    stroke-width: 1px;
+    stroke-width: 3px;
 }
 
 /*tab-stack minimal*/
@@ -392,4 +410,15 @@
 
 .color-behind-tabs-off .tab.active + .tab-group-indicator .tab-indicator.active{
     background-color:var(--colorAccentBg)
+}
+
+/*tabs-stack.tabs-subcontainer*/
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer.left, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer.right{
+    box-shadow:none;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer, 
+#browser:not(.tabs-top):not(.tabs-bottom).transparent-tabbar #tabs-subcontainer{
+    background-color:transparent;
 }
