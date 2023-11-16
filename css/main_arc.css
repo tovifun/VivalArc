@@ -227,11 +227,11 @@
     color:var(--colorFg);
 }
 
-/* .tabs-left .tab-position .tab > .tab-header, 
-.tabs-right .tab-position .tab > .tab-header
+.tabs-left .tab-position:not(:has(.tab-mini)) .tab > .tab-header, 
+.tabs-right .tab-position:not(:has(.tab-mini)) .tab > .tab-header
 {
-    margin:0px;
-} */
+    margin-left:0px;
+}
 
 .tabbar-workspace-button + #tabs-tabbar-container.left, 
 .tabbar-workspace-button + #tabs-tabbar-container.right{
