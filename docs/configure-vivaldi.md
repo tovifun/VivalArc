@@ -33,12 +33,12 @@
 - **Appearance** > Status Bar > `Status Info Overlay`
 - **Tabs** > Tab Stacking > `According`
 - **Keyboard** (Set the necessary keyboard shortcuts)
-### 3. Custom UI Mod
     - Create Bookmark > Remove it
     - Pin / Unpin Tab > `Command + D`
     - Print > Remove it
     - Panel > `Comand + P`
 
+### 3. Custom UI Mod
 - [Download the mod](https://github.com/tovifun/VivalArc/archive/refs/heads/main.zip), extract it to anywhere safe on your PC
 - **Themes > Open Theme** >  ArcLight.zip
 - Open `vivaldi://experiments` and enable `"Allow for using CSS modifications"`
