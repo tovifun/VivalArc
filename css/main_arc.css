@@ -11,17 +11,22 @@
 
 /*displayNewtabButton*/
 #browser:not(.tabs-top):not(.tabs-bottom) .toolbar > .newtab > button{
-    display:none;
+    opacity:0.2;
 }
+
+#browser:not(.tabs-top):not(.tabs-bottom) .toolbar > .newtab > button:hover{
+    opacity:0.7;
+}
+
 .tabs-left .toolbar-tabbar.sync-and-trash-container, 
 .tabs-right .toolbar-tabbar.sync-and-trash-container{
     display:none;
 }
 
 /*tabbarDrag*/
-.tabbar-wrapper{
+/* .tabbar-wrapper{
     -webkit-app-region: drag;
-}
+} */
 
 /* footerDisplay*/
 :not(.tabs-bottom):not(.tabs-top)#browser > footer{
@@ -422,3 +427,13 @@
 #browser:not(.tabs-top):not(.tabs-bottom).transparent-tabbar #tabs-subcontainer{
     background-color:transparent;
 }
+
+/* Transparent Start Page Navigation*/
+.startpage .startpage-navigation { box-shadow: none !important; }
+.startpage .startpage-navigation { background: transparent !important; }
+.startpage .startpage-navigation .startpage-navigation-group { border: 0 !important; } 
+
+/* Transparent Start Page Navigation Buttons */
+button.button-startpage { box-shadow: none !important; }
+button.button-startpage:after { background-image: none !important; }
+button.button-startpage:active { background: none !important; }
