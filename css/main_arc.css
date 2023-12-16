@@ -112,6 +112,25 @@
     scale:0.7;
 }
 
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup{
+    right: calc(var(--window-border) / var(--uiZoomLevel));
+    top: calc(1px / var(--uiZoomLevel));
+}
+
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup button{
+    width:calc((var(--window-header) - 2px) * 1.32 / var(--uiZoomLevel));
+    height:calc((var(--window-header) - 2px) / var(--uiZoomLevel));
+    padding:0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup button svg{
+    scale: calc(0.6 / var(--uiZoomLevel));
+    opacity:0.5;
+}
+
 /*mainbar*/
 .button-toolbar > button{
     border-radius:var(--radiusHalf);
