@@ -1,4 +1,4 @@
-你好，这个项目主要包含一套 CSS 文件和一个 Vivaldi 主题。目的是将 Vivaldi 自定义配置成 Arc 的外观样式，作为 Arc 的平替。
+你好，这个项目主要包含一套 CSS 文件和一个 Vivaldi 主题。目的是将 Vivaldi 自定义配置成 Arc 的外观样式，作为 Arc 的平替。适用于 macOS, Windows 和 Linux。
 - 关于这个项目的背景，可查看文档
   - [📄VivalArc, 背后的故事](https://github.com/tovifun/VivalArc/blob/main/docs/behind-the-scene-cn.md)
 - 如果你想直接开始配置
@@ -21,6 +21,7 @@
 ---
 
 ## 🧑‍💻 来自用户的截屏
+- Twitter [@altemo](https://x.com/atlemo/status/1765726601239491014)
 - Twitter [@vivaldi_fr](https://twitter.com/vivaldi_fr/status/1684643796942815233)
 - Github [@clementpoiret](https://github.com/tovifun/VivalArc/pull/5)
 - Bilibili [@tovi(me)](https://www.bilibili.com/opus/844070281819455558)

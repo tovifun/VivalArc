@@ -5,9 +5,9 @@ update: 2024.03.30
 
 :root{
     --window-border:8px; /* window border, recommend 4px~16px */
-    --mac-header:calc(var(--window-border) + 4px); /* title bar extra height */
-    --win-header:calc(var(--window-border) + 8px); /* title bar extra height */
-    --linux-header:calc(var(--window-border) + 8px); /* title bar extra height */
+    --mac-header:calc(var(--window-border) + 2px); /* title bar extra height */
+    --win-header:calc(var(--window-border) + 6px); /* title bar extra height */
+    --linux-header:calc(var(--window-border) + 6px); /* title bar extra height */
     --addressbar-height:36px;
     --window-button-scale:0.8;
     --window-button-opacity:0.3;
@@ -128,9 +128,9 @@ update: 2024.03.30
 #browser.linux:not(.tabs-top) #titlebar .vivaldi,
 #browser.win:not(.is-settingspage):not(.tabs-top) #titlebar .vivaldi{
     color:var(--colorFgAlpha);
-    scale: calc(0.65 / var(--uiZoomLevel));
-    margin-left: -5px;
-    margin-top: -3px;
+    scale: calc(0.7 / var(--uiZoomLevel));
+    margin-left: -6px;
+    margin-top: -4px;
 }
 
 #browser.linux:not(.tabs-top) #titlebar .vivaldi:hover,
