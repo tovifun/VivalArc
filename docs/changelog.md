@@ -1,3 +1,6 @@
+## 🗓️ 2024.03.30
+- Optimized the height of the title bar
+
 ## 🗓️ 2023.11.09
 - Increase the gap on both sides of the Tabbar.
 - The Tabbar is now draggable by default (if you don't want it to be draggable, you can change `.tabbar-wrapper` to `no-drag` in file `main_arc.css`.)

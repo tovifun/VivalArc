@@ -16,23 +16,22 @@
 
 **Must-haves** 
 - **Tabs** > Tab bar position > `Left`
-- **Panel** > Panel Options > `Check 'Floating Panel'`
 - **Address Bar** > `Uncheck 'Show Address Bar'`
+- **Keyboard** (Set the necessary keyboard shortcuts)
+    - Address Bar > `Command + B` (Remove Booksmarks shortcuts first in Windows)
+- **Additional Scrollbar Configuration for Windows Users**: As the default Windows scrollbar is quite prominent and somewhat unattractive, we require an extra tweak to optimize its appearance. Here's how to do it:
+  - Enter this in the address bar: `chrome://flags``
+  - Search keyword `fluent` and enable something like `Fluent scrollbars`，than you'll have a more subtle scrollbar.
+
+**Nice-to-haves**
+- **Appearance** > Status Bar > `Status Info Overlay`
+- **Panel** > Panel Options > `Check 'Floating Panel'`
 - **Quick Commands** > `Check 'Open Links In New Tab'`
 - **Keyboard** (Set the necessary keyboard shortcuts)
     - New Tab > Remove it
     - Quick Command > `Command + T`
     - Save Page As > Remove it
     - Tab Bar > `Command + S`
-    - Address Bar > `Command + B` (Remove Booksmarks shortcuts first in Windows)
-- **Additional Scrollbar Configuration for Windows Users**: As the default Windows scrollbar is quite prominent and somewhat unattractive, we require an extra tweak to optimize its appearance. Here's how to do it:
-  - Enter this in the address bar: `chrome://flags``
-  - Search for `windows fluent scrollbars` and enable it，than you'll have a more subtle scrollbar.
-
-**Nice-to-haves**
-- **Appearance** > Status Bar > `Status Info Overlay`
-- **Tabs** > Tab Stacking > `According`
-- **Keyboard** (Set the necessary keyboard shortcuts)
     - Create Bookmark > Remove it
     - Pin / Unpin Tab > `Command + D`
     - Print > Remove it
