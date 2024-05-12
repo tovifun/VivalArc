@@ -1,3 +1,8 @@
+## 🗓️ 2024.05.12
+- The latest version of VivalArc primarily focuses on optimizing two aspects of Vivaldi 6.7：
+  - The window buttons in the top-left corner of macOS can no longer be customized, causing them to overlapping the elements of the TabBar
+  - The 'Add Button' for creating new tabs has been relocated to the bottom of the window
+
 ## 🗓️ 2024.03.30
 - Optimized the height of the title bar
 

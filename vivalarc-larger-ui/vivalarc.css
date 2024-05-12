@@ -6,9 +6,9 @@ vivaldi version: v6.7
 
 :root{
     --window-border:10px; /* window border, recommend 4px~16px */
-    --mac-header:calc(var(--window-border) + 4px); /* title bar extra height */
-    --win-header:calc(var(--window-border) + 4px); /* title bar extra height */
-    --linux-header:calc(var(--window-border) + 6px); /* title bar extra height */
+    --mac-header:calc(var(--window-border) + 14px); /* title bar extra height */
+    --win-header:calc(var(--window-border) + 14px); /* title bar extra height */
+    --linux-header:calc(var(--window-border) + 14px); /* title bar extra height */
     --addressbar-height:36px;
     --window-button-scale:0.8;
     --window-button-opacity:0.3;
@@ -106,7 +106,7 @@ vivaldi version: v6.7
 #browser.mac #titlebar #pagetitle{
     font-size:11px;
     color:var(--colorFg);
-    opacity:0;
+    opacity:0.5;
 }
 
 .win #titlebar #pagetitle > span, 
