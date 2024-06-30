@@ -1,14 +1,14 @@
 /* 
-version:1.0.2
-update: 2024.05.12
-vivaldi version: v6.7
+version:1.0.3
+update: 2024.06.29
+vivaldi version: v6.8
 */
 
 :root{
-    --window-border:10px; /* window border, recommend 4px~16px */
-    --mac-header:calc(var(--window-border) + 14px); /* title bar extra height */
-    --win-header:calc(var(--window-border) + 14px); /* title bar extra height */
-    --linux-header:calc(var(--window-border) + 14px); /* title bar extra height */
+    --window-border:6px; /* window border, recommend 4px~16px */
+    --mac-header:calc(var(--window-border) + 18px); /* title bar extra height */
+    --win-header:calc(var(--window-border) + 18px); /* title bar extra height */
+    --linux-header:calc(var(--window-border) + 18px); /* title bar extra height */
     --addressbar-height:36px;
     --window-button-scale:0.8;
     --window-button-opacity:0.3;
@@ -79,6 +79,7 @@ vivaldi version: v6.7
 #browser.linux:not(.is-settingspage):not(.tabs-top) #header,
 #browser.linux.color-behind-tabs-off:not(.is-settingspage)#browser:not(.tabs-top):not(.tabs-bottom) #header{
     min-height:var(--linux-header) !important;
+    height:var(--linux-header) !important;
     background:var(--colorTabBar);
 }
 
@@ -92,6 +93,7 @@ vivaldi version: v6.7
 #browser.win:not(.is-settingspage):not(.tabs-top) #header,
 #browser.win.color-behind-tabs-off:not(.is-settingspage)#browser:not(.tabs-top):not(.tabs-bottom) #header{
     min-height:var(--win-header) !important;
+    height:var(--win-header) !important;
     background:var(--colorTabBar);
 }
 
@@ -127,9 +129,9 @@ vivaldi version: v6.7
 #browser.linux:not(.tabs-top) #titlebar .vivaldi,
 #browser.win:not(.is-settingspage):not(.tabs-top) #titlebar .vivaldi{
     color:var(--colorFgAlpha);
-    scale: calc(0.7 / var(--uiZoomLevel));
-    margin-left: -6px;
-    margin-top: -4px;
+    scale: calc(0.8 / var(--uiZoomLevel));
+    margin-left: -2px;
+    margin-top: 0px;
 }
 
 #browser.linux:not(.tabs-top) #titlebar .vivaldi:hover,
@@ -227,6 +229,7 @@ vivaldi version: v6.7
 .color-behind-tabs-off.address-top#browser:not(.tabs-top):not(.tabs-bottom) .mainbar,
 .color-behind-tabs-on.address-top#browser:not(.tabs-top):not(.tabs-bottom) .mainbar{
     border:none;
+    background: transparent;
 }
 
 .color-behind-tabs-off.address-top#browser:not(.tabs-top):not(.tabs-bottom) .mainbar{
@@ -257,7 +260,7 @@ vivaldi version: v6.7
     --LowlightColor: var(--colorFgFadedMore);
 }
 
-#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .ExtensionIcon--Hidden{
+#browser:not(.tabs-top):not(.tabs-bottom) .ExtensionIcon--Hidden{
     background-color:transparent;
 }
 
@@ -344,10 +347,10 @@ vivaldi version: v6.7
     margin-left:0px;
 }
 
-.tabbar-workspace-button + #tabs-tabbar-container.left, 
+/* .tabbar-workspace-button + #tabs-tabbar-container.left, 
 .tabbar-workspace-button + #tabs-tabbar-container.right{
     padding-top:4px;
-}
+} */
 
 #browser:not(.theme-dark) #tabs-tabbar-container.left,
 #browser:not(.theme-dark) #tabs-tabbar-container.right{

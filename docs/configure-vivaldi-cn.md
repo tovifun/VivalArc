@@ -23,7 +23,7 @@
 
 **必要的设置：**
 - **标签** > **标签栏位置** > 选择`左侧`
-- **地址栏** > 去掉`显示地址栏`
+- **地址栏** > 去掉`显示地址栏`(当然也可以打开，不过我觉得关掉比较简洁。可以为地址栏设置一个显示和打开的快捷键，如下：)
 - **键盘**(设置必要的快捷键)
     - **地址栏** > 设置为 `Command + B`（因为地址栏太抢眼了，可以默认隐藏，当需要使用地址栏时，使用快捷键打开。Windows下需先移除「书签」的快捷键）
 - **Windows用户额外的滚动条配置**：因为 Windows 和 Linux 默认的滚动条非常明显，有点丑陋，我们需要一个额外的修改来优化这个滚动条，设置方式如下：
@@ -49,10 +49,10 @@
 
 ### 第三步：自定义 UI MOD
 
-- [下载这个文件](https://github.com/tovifun/VivalArc/archive/refs/heads/main.zip)，解压保存在一个你不会删除的地方
-- 主题 > 打开主题 >  选择 ArcLight.zip 主题
-- 打开 `vivaldi://experiments` 并开启  `"Allow for using CSS modifications"`
-- 打开设置 > 外观 > `自定义UI MOD`
-- 选择文件夹 > 选择刚才解压的文件夹
-- 重启 Vivaldi，这时你应该可以看到你的浏览器效果跟我上方的图片效果一样了
-- 换一张你喜欢的壁纸，你刚解压的文件夹里我放了几张进去，可以换上看看
+1. [**下载这个文件**](https://github.com/tovifun/VivalArc/archive/refs/heads/main.zip)，解压保存在一个你不会删除的地方
+2. **设置主题**：可使用我放在本地的主题，如theme-ArcLight.zip（或者直接打开[我在 Vivaldi Community 上挑选的几个主题](./curated-themes-cn.md)
+3. 在 Vivaldi 地址栏：打开 `vivaldi://experiments` 并开启  `"Allow for using CSS modifications"`
+4. 打开 Vivaldi 设置 > 外观 > `自定义UI MOD`
+5. 选择文件夹 > 选择刚才解压的文件夹
+6. 重启 Vivaldi，这时你应该可以看到你的浏览器效果跟我上方的图片效果一样了
+7. 换一张你喜欢的壁纸，你刚解压的文件夹里我放了几张进去，可以换上看看

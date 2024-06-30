@@ -7,11 +7,12 @@
   - [📺5分钟将 Vivaldi 配置成 Arc](https://www.bilibili.com/video/BV1fe4y1a7WQ)
 - 更多相关链接
   - [🎉更新日志](https://github.com/tovifun/VivalArc/blob/main/docs/changelog-cn.md)
+  - [🎨推荐主题](https://github.com/tovifun/VivalArc/blob/main/docs/curated-themes-cn.md)
   - [🧑‍💻常见问题](https://github.com/tovifun/VivalArc/blob/main/docs/faq-cn.md)
   - [🌐VivalArc 官网](https://arc.tovi.fun)
   - [📝VivalArc README English version](https://github.com/tovifun/VivalArc/blob/main/README.md) 
 
-![截屏预览](./assets/vivalarc_screenshot.jpeg)
+ ![Screenshot](./screenshots/vivalarc_1.0.0_mac.jpeg)
 
 ---
 

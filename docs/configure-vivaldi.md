@@ -39,7 +39,8 @@
 
 ### 3. Custom UI Mod
 - [Download the mod](https://github.com/tovifun/VivalArc/archive/refs/heads/main.zip), extract it to anywhere safe on your PC
-- **Themes > Open Theme** >  ArcLight.zip
+- **Themes > Open Theme** >  theme-ArcLight.zip
+  - Or select a [theme I pick from Vivaldi Community](./curated-themes.md)
 - Open `vivaldi://experiments` and enable `"Allow for using CSS modifications"`
 - Open Settings > Appearance > Custom UI MOD
 - Select the folder where you've extracted it

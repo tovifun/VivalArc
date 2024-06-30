@@ -1,4 +1,11 @@
-## 🗓️ 2024.05.12
+## 🗓️ 2024.06.29 | v1.0.3
+1. This version mainly addresses a minor issue in Vivaldi 6.8 update—[Issue#20](https://github.com/tovifun/VivalArc/issues/20). (Special thanks to @NextEcho for providing CSS solutions, although I did not entirely adopt their method in the end).
+2. In previous versions, I created a few gradient Vivaldi themes to mimic the Arc style and included them in the project files for everyone to use. A few days ago, I explored the Themes section on the Vivaldi Community and discovered many suitable themes. I realized there was no need to go out of my way to create new themes, so I tried some of the popular themes in the Community and selected a few that I found fitting. Here’s how you can use them:
+	1.	Open the [recommended theme link](./curated-themes.md).
+	2.	Click on the theme name to go to its page.
+	3.	Click the install button below the theme.
+
+## 🗓️ 2024.05.12 | v1.0.2
 - The latest version of VivalArc primarily focuses on optimizing two aspects of Vivaldi 6.7：
   - The window buttons in the top-left corner of macOS can no longer be customized, causing them to overlapping the elements of the TabBar
   - The 'Add Button' for creating new tabs has been relocated to the bottom of the window
