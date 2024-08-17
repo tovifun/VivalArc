@@ -2,9 +2,9 @@ This project mainly includes a set of CSS files and a Vivaldi theme. With a few 
 
 ## VivalArc Blog
 - [📝VivalArc, Configuration Steps](https://github.com/tovifun/VivalArc/blob/main/docs/configure-vivaldi.md)
+- [🎨How to Set Up Different Versions of Vivaldi Arc](https://github.com/tovifun/VivalArc/blob/main/docs/vivalarc-variants.md)
+- [🎨How to Use Local Vivaldi Themes](https://github.com/tovifun/VivalArc/blob/main/docs/using-local-vivaldi-theme.md)
 - [🎨Recommended Vivaldi Themes](https://github.com/tovifun/VivalArc/blob/main/docs/curated-themes.md)
-- [🎨How to Set Up Different Versions of Vivaldi Arc](https://github.com/tovifun/VivalArc/blob/main/docs/curated-themes.md)
-- [🎨How to Use Local Vivaldi Themes](https://github.com/tovifun/VivalArc/blob/main/using-local-vivaldi-theme.md)
 
 ## 🗃️ Resources
 - [🎉Change Log](https://github.com/tovifun/VivalArc/blob/main/docs/changelog.md)

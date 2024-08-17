@@ -8,7 +8,7 @@
 - VivalArc Blog
   - [🎨推荐一些 Vivaldi 主题](https://github.com/tovifun/VivalArc/blob/main/docs/curated-themes-cn.md)
   - [🧑‍💻如何使用 VivalArc 不同版本](https://github.com/tovifun/VivalArc/blob/main/docs/vivalarc-variants-cn.md)
-  - [🎨如何使用本地的 Vivaldi 主题](https://github.com/tovifun/VivalArc/blob/main/using-local-vivaldi-theme-cn.md)
+  - [🎨如何使用本地的 Vivaldi 主题](https://github.com/tovifun/VivalArc/blob/main/docs/using-local-vivaldi-theme-cn.md)
 - 更多相关链接
   - [🧑‍💻常见问题](https://github.com/tovifun/VivalArc/blob/main/docs/faq-cn.md)
   - [🎉更新日志](https://github.com/tovifun/VivalArc/blob/main/docs/changelog-cn.md)

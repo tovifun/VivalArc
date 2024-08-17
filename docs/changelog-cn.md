@@ -5,7 +5,7 @@ Vivaldi Snapshot 6.9（Vivaldi 的 Beta 版）最近发布了更新，这次更�
 ### 2. 如何使用 VivalArc 的不同版本
 有些用户询问如何使用带有标题栏的样式 #26。实际上，我已经设置了几个不同版本的变体，用户可以根据自己的喜好选择使用。详细信息请参阅：[如何使用 Vivaldi Arc 的不同版本](./vivalarc-variants-cn.md)。
 
-### 2. Reflect New Tab 主题
+### 3. Reflect New Tab 主题
 最近，我发现了一个名为 [Reflect New Tab](https://chromewebstore.google.com/detail/reflect-new-tab/jnhdkfampckckkmbanadkkjlcaemdkob) 的新标签页插件，其渐变背景非常美观。于是，我将这个插件的背景图制作成了 [Vivaldi 的主题](./curated-themes-cn.md)。效果出乎意料地好，让 VivalArc 的外观焕然一新，尤其是粉色主题，我个人非常喜欢。强烈推荐大家试试。
 
 ## 🗓️ 2024.06.29 | v1.0.3
