@@ -5,13 +5,17 @@
   - [📝开始配置 VivalArc](https://github.com/tovifun/VivalArc/blob/main/docs/configure-vivaldi-cn.md)
 - 如果不想阅读文字版，也可以看我在B站上的步骤视频 
   - [📺5分钟将 Vivaldi 配置成 Arc](https://www.bilibili.com/video/BV1fe4y1a7WQ)
+- VivalArc Blog
+  - [🎨推荐一些 Vivaldi 主题](https://github.com/tovifun/VivalArc/blob/main/docs/curated-themes-cn.md)
+  - [🧑‍💻如何使用 VivalArc 不同版本](https://github.com/tovifun/VivalArc/blob/main/docs/vivalarc-variants-cn.md)
+  - [🎨如何使用本地的 Vivaldi 主题](https://github.com/tovifun/VivalArc/blob/main/using-local-vivaldi-theme-cn.md)
 - 更多相关链接
-  - [🎉更新日志](https://github.com/tovifun/VivalArc/blob/main/docs/changelog-cn.md)
-  - [🎨推荐主题](https://github.com/tovifun/VivalArc/blob/main/docs/curated-themes-cn.md)
   - [🧑‍💻常见问题](https://github.com/tovifun/VivalArc/blob/main/docs/faq-cn.md)
+  - [🎉更新日志](https://github.com/tovifun/VivalArc/blob/main/docs/changelog-cn.md)
   - [🌐VivalArc 官网](https://arc.tovi.fun)
   - [📝VivalArc README English version](https://github.com/tovifun/VivalArc/blob/main/README.md) 
 
+## 🖥️ VivalArc Screenshot
  ![Screenshot](./screenshots/vivalarc_1.0.0_mac.jpeg)
 
 ---

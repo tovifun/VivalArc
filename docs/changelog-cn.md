@@ -1,3 +1,13 @@
+## 🗓️ 2024.08.17 | v1.0.4
+### 1. 针对 Vivaldi 6.9 的优化
+Vivaldi Snapshot 6.9（Vivaldi 的 Beta 版）最近发布了更新，这次更新引发了 VivalArc 的一个小问题——侧边栏的背景多了一层半透明效果 #24。此次优化的重点是解决这个问题。
+
+### 2. 如何使用 VivalArc 的不同版本
+有些用户询问如何使用带有标题栏的样式 #26。实际上，我已经设置了几个不同版本的变体，用户可以根据自己的喜好选择使用。详细信息请参阅：[如何使用 Vivaldi Arc 的不同版本](./vivalarc-variants-cn.md)。
+
+### 2. Reflect New Tab 主题
+最近，我发现了一个名为 [Reflect New Tab](https://chromewebstore.google.com/detail/reflect-new-tab/jnhdkfampckckkmbanadkkjlcaemdkob) 的新标签页插件，其渐变背景非常美观。于是，我将这个插件的背景图制作成了 [Vivaldi 的主题](./curated-themes-cn.md)。效果出乎意料地好，让 VivalArc 的外观焕然一新，尤其是粉色主题，我个人非常喜欢。强烈推荐大家试试。
+
 ## 🗓️ 2024.06.29 | v1.0.3
 1. 这个版本主要优化 Vivaldi 6.8 更新之后的一个小问题——“[Issue#20左侧标签栏后，工作区下的分割线与第一个标签页有重合](https://github.com/tovifun/VivalArc/issues/20)”。（感谢 @NextEcho 细心提供 CSS，虽然最后我采取的方法和他的不完全一致
 2. 在之前的版本里面，我为了模仿 Arc 的样式，做了几个渐变的 Vivaldi 主题放在了项目文件里供大家使用。然后我前几天去逛了一下 Vivald Community 的 Themes 专区，发现上面就有很多合适的主题。我就在想，我何必舍近求远自己自制主题，于是我在 Community 尝试了一些热门主题，并挑选了几个我觉得合适的主题提供大家直接使用。使用的方式很简单：

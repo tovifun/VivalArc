@@ -5,10 +5,10 @@ vivaldi version: v6.6 - v6.9
 */
 
 :root{
-    --window-border:10px; /* window border, recommend 4px~16px */
-    --mac-header:calc(var(--window-border) + 0px); /* title bar extra height */
-    --win-header:calc(var(--window-border) + 0px); /* title bar extra height */
-    --linux-header:calc(var(--window-border) + 0px); /* title bar extra height */
+    --window-border:4px; /* window border, recommend 4px~16px */
+    --mac-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --win-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --linux-header:calc(var(--window-border) + 20px); /* title bar extra height */
     --addressbar-height:36px;
     --window-button-scale:0.8;
     --window-button-opacity:0.3;
@@ -108,7 +108,7 @@ vivaldi version: v6.6 - v6.9
 #browser.mac #titlebar #pagetitle{
     font-size:11px;
     color:var(--colorFg);
-    opacity:0;
+    opacity:0.5;
 }
 
 .win #titlebar #pagetitle > span, 
@@ -129,9 +129,9 @@ vivaldi version: v6.6 - v6.9
 #browser.linux:not(.tabs-top) #titlebar .vivaldi,
 #browser.win:not(.is-settingspage):not(.tabs-top) #titlebar .vivaldi{
     color:var(--colorFgAlpha);
-    scale: calc(0.7 / var(--uiZoomLevel));
-    margin-left: -6px;
-    margin-top: -4px;
+    scale: calc(0.8 / var(--uiZoomLevel));
+    margin-left: -2px;
+    margin-top: 0px;
 }
 
 #browser.linux:not(.tabs-top) #titlebar .vivaldi:hover,
@@ -332,7 +332,6 @@ vivaldi version: v6.6 - v6.9
     background-color:transparent;
 }
 
-
 .tabs-left .inner > .tabbar-wrapper:not(:has(.tab-small)), 
 .tabs-right .inner > .tabbar-wrapper:not(:has(.tab-small)){
     margin:0 var(--tab-padding);
@@ -379,7 +378,7 @@ vivaldi version: v6.6 - v6.9
 
 #browser.mac.address-top-off.tabs-left .inner>.tabbar-wrapper, 
 #browser.mac.address-top-off.tabs-right .inner>.tabbar-wrapper{
-    padding-top:12px;
+    padding-top:8px;
 }
 
 /*panel*/

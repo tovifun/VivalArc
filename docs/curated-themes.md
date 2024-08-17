@@ -1,7 +1,28 @@
 # Recommended Themes
 In previous versions, I created a few gradient Vivaldi themes to mimic the Arc style and included them in the project files for everyone to use. A few days ago, I explored the Themes section on the Vivaldi Community and discovered many suitable themes. I realized there was no need to go out of my way to create new themes, so I tried some of the popular themes in the Community and selected a few that I found fitting. Here’s how you can use them:
-1.	Click on the theme name to go to its page.
+1.	Click on the theme name to go to its page. If a theme name is not clickable, it means the theme is still under review, and you can [use the local version instead](./using-local-vivaldi-theme.md).
 2.	Click the install button below the theme.
+
+## Themes By ToviFun: 
+You can also find these themes in the local folder ../themes/
+
+| name       | preview                           | 
+| ---------- | ----------------------------------- | 
+| [VivalArc Reflect Pink]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_pink.jpg) | 
+| [VivalArc Reflect Purple Vibrant]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_purple_vibrant.jpg) | 
+| [VivalArc Reflect Purple]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_purple.jpg) | 
+| [VivalArc Reflect Blue]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_blue.jpg) | 
+| [VivalArc Reflect Green]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_green.jpg) | 
+| [VivalArc Reflect Dark]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark.jpg) | 
+| [VivalArc Reflect Dark Purple]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_purple.jpg) | 
+| [VivalArc Reflect Dark Pink]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_pink.jpg) | 
+| [VivalArc Reflect Dark Blue]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_blue.jpg) | 
+| [VivalArc Reflect Dark Green]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_green.jpg) | 
+| [Arc Light](https://themes.vivaldi.net/themes/1LVJ2bOYJx9)  | ![theme](../themes/theme_screenshots/theme_arclight.jpg) | 
+| [Arc Green](https://themes.vivaldi.net/themes/eZXvokoRvOW) | ![theme](../themes/theme_screenshots/theme_gradient_greenlight.jpg) | 
+| [Arc Pink](https://themes.vivaldi.net/themes/0WV7AngZlaX) | ![theme](../themes/theme_screenshots/theme_gradient_pinklight.jpg) | 
+| [Arc Dark](https://themes.vivaldi.net/themes/rwjvExg4lAL) | ![theme](../themes/theme_screenshots/theme_arcdark.jpg) | 
+| [Arc Dark Pure](https://themes.vivaldi.net/themes/NOb71LX8J1g) | ![theme](../themes/theme_screenshots/theme_arcdark_pure.jpg) | 
 
 ## Light Themes from the Vivaldi Community
 
@@ -20,14 +41,3 @@ In previous versions, I created a few gradient Vivaldi themes to mimic the Arc s
 | [Montanhas](https://themes.vivaldi.net/themes/MD07Kq4gv14)  | ![theme](../themes/theme_screenshots/montanhas.jpg) | 
 | [Vivaldi Midnight](https://themes.vivaldi.net/themes/rwjvExj2lAL)  | ![theme](../themes/theme_screenshots/vivaldi_midnight.jpg) | 
 | [Sunset into the midnight](https://themes.vivaldi.net/themes/gZplByVe7QV)  | ![theme](../themes/theme_screenshots/sunset_into_the_midnight.jpg) | 
-
-
-## Themes in local folder: ../themes/
-
-| name       | preview                           | 
-| ---------- | ----------------------------------- | 
-| [Arc Light](https://themes.vivaldi.net/themes/1LVJ2bOYJx9)  | ![theme](../themes/theme_screenshots/theme_arclight.jpg) | 
-| [Arc Green](https://themes.vivaldi.net/themes/eZXvokoRvOW) | ![theme](../themes/theme_screenshots/theme_gradient_greenlight.jpg) | 
-| [Arc Pink](https://themes.vivaldi.net/themes/0WV7AngZlaX) | ![theme](../themes/theme_screenshots/theme_gradient_pinklight.jpg) | 
-| [Arc Dark](https://themes.vivaldi.net/themes/rwjvExg4lAL) | ![theme](../themes/theme_screenshots/theme_arcdark.jpg) | 
-| [Arc Dark Pure](https://themes.vivaldi.net/themes/NOb71LX8J1g) | ![theme](../themes/theme_screenshots/theme_arcdark_pure.jpg) | 

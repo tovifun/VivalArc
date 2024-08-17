@@ -1,3 +1,14 @@
+## 🗓️ 2024.08.17 | v1.0.4
+
+### 1. Optimization for Vivaldi 6.9
+Vivaldi Snapshot 6.9 (the Beta version of Vivaldi) was recently updated, which introduced a minor issue with VivalArc—an extra semi-transparent layer appeared on the sidebar background #24 . This update primarily addresses and resolves this issue.
+
+### 2. How to Use Different Versions of VivalArc
+Some users have asked how to use the style with a title bar #26. In fact, I have created several variants of VivalArc, allowing you to choose the style that best suits your preferences. For more details, please refer to: [How to Set Up Different Versions of Vivaldi Arc](./vivalarc-variants.md).
+
+### 3. Reflect New Tab Theme
+I recently discovered a plugin called [Reflect New Tab](https://chromewebstore.google.com/detail/reflect-new-tab/jnhdkfampckckkmbanadkkjlcaemdkob), which features a beautiful gradient background. I decided to create a [Vivaldi theme](./curated-themes.md) using this background, and the results were impressive—it gave VivalArc a whole new look. My personal favorite is the pink theme, and I highly recommend you give it a try.
+
 ## 🗓️ 2024.06.29 | v1.0.3
 1. This version mainly addresses a minor issue in Vivaldi 6.8 update—[Issue#20](https://github.com/tovifun/VivalArc/issues/20). (Special thanks to @NextEcho for providing CSS solutions, although I did not entirely adopt their method in the end).
 2. In previous versions, I created a few gradient Vivaldi themes to mimic the Arc style and included them in the project files for everyone to use. A few days ago, I explored the Themes section on the Vivaldi Community and discovered many suitable themes. I realized there was no need to go out of my way to create new themes, so I tried some of the popular themes in the Community and selected a few that I found fitting. Here’s how you can use them:

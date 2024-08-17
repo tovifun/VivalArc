@@ -1,7 +1,7 @@
 /* 
-version:1.0.3
-update: 2024.06.29
-vivaldi version: v6.8
+version: 1.0.4
+update: 2024.08.17
+vivaldi version: v6.6 - v6.9
 */
 
 :root{
@@ -327,6 +327,11 @@ vivaldi version: v6.8
 }
 
 /*tabbar left & tabbar right*/
+.tabs-left .tabbar-wrapper,
+.tabs-right .tabbar-wrapper{
+    background-color:transparent;
+}
+
 .tabs-left .inner > .tabbar-wrapper:not(:has(.tab-small)), 
 .tabs-right .inner > .tabbar-wrapper:not(:has(.tab-small)){
     margin:0 var(--tab-padding);

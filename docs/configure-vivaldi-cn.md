@@ -50,9 +50,9 @@
 ### 第三步：自定义 UI MOD
 
 1. [**下载这个文件**](https://github.com/tovifun/VivalArc/archive/refs/heads/main.zip)，解压保存在一个你不会删除的地方
-2. **设置主题**：可使用我放在本地的主题，如theme-ArcLight.zip（或者直接打开[我在 Vivaldi Community 上挑选的几个主题](./curated-themes-cn.md)
-3. 在 Vivaldi 地址栏：打开 `vivaldi://experiments` 并开启  `"Allow for using CSS modifications"`
-4. 打开 Vivaldi 设置 > 外观 > `自定义UI MOD`
-5. 选择文件夹 > 选择刚才解压的文件夹
-6. 重启 Vivaldi，这时你应该可以看到你的浏览器效果跟我上方的图片效果一样了
-7. 换一张你喜欢的壁纸，你刚解压的文件夹里我放了几张进去，可以换上看看
+2. **打开Vivaldi 设置，设置主题**：可使用我放在本地的主题，如theme-ArcLight.zip
+   - 或者直接打开[我在 Vivaldi Community 上挑选的几个主题](./curated-themes-cn.md)
+3. **在 Vivaldi 地址栏**：打开 `vivaldi://experiments` 并开启  `"Allow for using CSS modifications"`
+4. **打开 Vivaldi 设置** > 外观 > `自定义UI MOD`
+   - 选择文件夹 > 选择刚才解压的文件夹
+5. **重启 Vivaldi**，这时你应该可以看到你的浏览器效果跟我上方的图片效果一样了
