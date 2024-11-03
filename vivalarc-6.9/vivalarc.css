@@ -1,14 +1,14 @@
 /* 
-version: 1.0.5
-update: 2024.11.03
-vivaldi version: v6.6 - v7.0
+version: 1.0.4
+update: 2024.08.17
+vivaldi version: v6.6 - v6.9
 */
 
 :root{
-    --window-border:10px; /* window border, recommend 4px~16px */
-    --mac-header:calc(var(--window-border) + 0px); /* title bar extra height */
-    --win-header:calc(var(--window-border) + 0px); /* title bar extra height */
-    --linux-header:calc(var(--window-border) + 0px); /* title bar extra height */
+    --window-border:4px; /* window border, recommend 4px~16px */
+    --mac-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --win-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --linux-header:calc(var(--window-border) + 20px); /* title bar extra height */
     --addressbar-height:36px;
     --window-button-scale:0.8;
     --window-button-opacity:0.3;
@@ -16,11 +16,6 @@ vivaldi version: v6.6 - v7.0
     --colorToviTransparent:transparent;
     --webview-shadow-light:0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 0px var(--window-border) 0px rgba(0, 0, 0, 0.10);
     --webview-shadow-dark:0px 2px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 8px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1.2px #ffffff18;
-}
-
-/*breakmode*/
-#browser.break-mode #main{
-    opacity:0;
 }
 
 /*tabbarButton*/
@@ -38,11 +33,9 @@ vivaldi version: v6.6 - v7.0
 } */
 
 /*footerDisplay*/
-#browser:not(.tabs-bottom):not(.tabs-top) footer#footer,
-:not(.tabs-bottom)#browser > footer,
-#browser > footer > .toolbar-statusbar{
-    background:transparent;
-    border:none;
+:not(.tabs-bottom):not(.tabs-top)#browser > footer{
+    display:none;
+    background:var(--colorBgAlphaHeavier);
 }
 
 /*defaultBrowserModal*/
@@ -115,7 +108,7 @@ vivaldi version: v6.6 - v7.0
 #browser.mac #titlebar #pagetitle{
     font-size:11px;
     color:var(--colorFg);
-    opacity:0;
+    opacity:0.5;
 }
 
 .win #titlebar #pagetitle > span, 
@@ -136,9 +129,9 @@ vivaldi version: v6.6 - v7.0
 #browser.linux:not(.tabs-top) #titlebar .vivaldi,
 #browser.win:not(.is-settingspage):not(.tabs-top) #titlebar .vivaldi{
     color:var(--colorFgAlpha);
-    scale: calc(0.7 / var(--uiZoomLevel));
-    margin-left: -6px;
-    margin-top: -4px;
+    scale: calc(0.8 / var(--uiZoomLevel));
+    margin-left: -2px;
+    margin-top: 0px;
 }
 
 #browser.linux:not(.tabs-top) #titlebar .vivaldi:hover,
@@ -218,7 +211,7 @@ vivaldi version: v6.6 - v7.0
     opacity:1;
 }
 
-/*addressbar_legacy*/
+/*addressbar*/
 #browser.win:not(.tabs-top):not(.tabs-bottom).address-top .toolbar:has(.window-buttongroup.on-mainbar),
 #browser.linux:not(.tabs-top):not(.tabs-bottom).address-top .toolbar:has(.window-buttongroup.on-mainbar){
     min-height:calc((var(--addressbar-height)) / var(--uiZoomLevel));
@@ -229,6 +222,10 @@ vivaldi version: v6.6 - v7.0
 }
 
 /*mainbar*/
+.button-toolbar > button{
+    border-radius:var(--radiusHalf);
+}
+
 .color-behind-tabs-off.address-top#browser:not(.tabs-top):not(.tabs-bottom) .mainbar,
 .color-behind-tabs-on.address-top#browser:not(.tabs-top):not(.tabs-bottom) .mainbar{
     border:none;
@@ -236,9 +233,13 @@ vivaldi version: v6.6 - v7.0
 }
 
 .color-behind-tabs-off.address-top#browser:not(.tabs-top):not(.tabs-bottom) .mainbar{
-    /* background:var(--colorTabBar);
-    color: var(--colorFg); */
-    -webkit-app-region: drag;
+    background:var(--colorTabBar);
+    color: var(--colorFg);
+}
+
+
+#browser.mac.address-top .toolbar:has(.window-buttongroup.on-mainbar){
+    padding: 0 calc(8px / var(--uiZoomLevel));
 }
 
 #browser:not(.tabs-top):not(.tabs-bottom).address-top .UrlBar-SearchField,
@@ -257,10 +258,6 @@ vivaldi version: v6.6 - v7.0
 .UrlFragment-Wrapper--ShouldHighlight{
     --HighlightColor: var(--colorFgIntense);
     --LowlightColor: var(--colorFgFadedMore);
-}
-
-.button-toolbar > button{
-    border-radius:var(--radiusHalf);
 }
 
 #browser:not(.tabs-top):not(.tabs-bottom) .ExtensionIcon--Hidden{
@@ -291,10 +288,6 @@ vivaldi version: v6.6 - v7.0
     background-color: var(--colorFgAlpha);
 }
 
-.color-behind-tabs-off .ExtensionToggleIcon.ExtensionToggleIcon--extensionsExpanded{
-    background-color:transparent;
-}
-
 /*bookmark-bar*/
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off.bookmark-bar-top .bookmark-bar,
 #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .bookmark-bar button{
@@ -305,6 +298,11 @@ vivaldi version: v6.6 - v7.0
 }
 
 /*workspace button*/
+#browser #tabs-tabbar-container.left  ::-webkit-scrollbar, 
+#browser #tabs-tabbar-container.right  ::-webkit-scrollbar{
+    display: none;
+}
+
 #browser.transparent-tabbar .button-toolbar.workspace-popup.tabbar-workspace-button,
 #browser.transparent-tabbar.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button,
 #browser.transparent-tabbar.tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button,
@@ -329,48 +327,40 @@ vivaldi version: v6.6 - v7.0
 }
 
 /*tabbar left & tabbar right*/
-
-/* #browser #tabs-tabbar-container.left  ::-webkit-scrollbar, 
-#browser #tabs-tabbar-container.right  ::-webkit-scrollbar{
-    display: none; 
-} */
-
 .tabs-left .tabbar-wrapper,
 .tabs-right .tabbar-wrapper{
     background-color:transparent;
 }
 
-/*tabbar_left_and_right_padding*/
-/* .tabs-left .inner > .tabbar-wrapper:not(:has(.tab-small)), 
+.tabs-left .inner > .tabbar-wrapper:not(:has(.tab-small)), 
 .tabs-right .inner > .tabbar-wrapper:not(:has(.tab-small)){
     margin:0 var(--tab-padding);
-} */
+}
 
-/* .tabs-left .accordion-toggle-arrow, 
+.tabs-left .accordion-toggle-arrow, 
 .tabs-right .accordion-toggle-arrow{
     max-width:calc(var(--Width) - 16px + (var(--tab-padding) * 2));
-} */
+}
 
-/* #browser:not(.tabs-top):not(.tabs-bottom) .tab-position .tab{
+#browser:not(.tabs-top):not(.tabs-bottom) .tab-position .tab{
     color:var(--colorFg);
-} */
+}
 
-/* .tabs-left .tab-position:not(:has(.tab-mini)) .tab > .tab-header, 
+.tabs-left .tab-position:not(:has(.tab-mini)) .tab > .tab-header, 
 .tabs-right .tab-position:not(:has(.tab-mini)) .tab > .tab-header
 {
     margin-left:0px;
 }
- */
 
 /* .tabbar-workspace-button + #tabs-tabbar-container.left, 
 .tabbar-workspace-button + #tabs-tabbar-container.right{
     padding-top:4px;
 } */
 
-/* #browser:not(.theme-dark) #tabs-tabbar-container.left,
+#browser:not(.theme-dark) #tabs-tabbar-container.left,
 #browser:not(.theme-dark) #tabs-tabbar-container.right{
     box-shadow:none;
-} */
+}
 
 #browser.transparent-tabbar #tabs-tabbar-container.left, 
 #browser.transparent-tabbar #tabs-tabbar-container.right,
@@ -379,75 +369,16 @@ vivaldi version: v6.6 - v7.0
     background: var(--colorToviTransparent);
     border: none;
     box-shadow:none;
-    /* min-width: 36px; */
-    /* width: 36px; */
 }
 
 #browser.tabs-left .inner>.tabbar-wrapper, 
 #browser.tabs-right .inner>.tabbar-wrapper{
-    padding-bottom:var(--window-border);
+    padding-bottom:8px;
 }
 
-/* #browser.mac.address-top-off.tabs-left .inner>.tabbar-wrapper, 
+#browser.mac.address-top-off.tabs-left .inner>.tabbar-wrapper, 
 #browser.mac.address-top-off.tabs-right .inner>.tabbar-wrapper{
     padding-top:8px;
-} */
-
-/* tab stack frame */
-/* .dim-blurred:not(.hasfocus) .svg-tab-stack, .dim-blurred:not(.hasfocus) .stack-frame {
-    stroke: var(--colorBorder);
-}
-.svg-tab-stack, .stack-frame {
-    stroke: var(--colorBgIntense);
-}
-.svg-tab-stack line, .svg-tab-selection line, .svg-tab-stack rect, .svg-tab-selection rect {
-    fill: none;
-    stroke-width: 3px;
-}
- */
-/*tab-stack minimal*/
-/* .tab-indicator{
-    border-top:4px solid transparent;
-    border-bottom:10px solid tranparent;
-    transition-duration: 0.1s;
-    transition:0.1s;
-} */
-
-/* .tab-indicator:hover{
-    border-top:0px solid transparent;
-    border-bottom:10px solid tranparent;
-    transition-duration: 0.1s;
-    transition:0.1s;
-}
- */
-/* .tab-group-indicator{
-    padding:0;
-} */
-
-.color-behind-tabs-off .tab-indicator{
-    background-color:var(--colorAccentBgAlpha);
-}
-.color-behind-tabs-off .tab-indicator:hover{
-    background-color:var(--colorAccentBg);
-}
-
-.color-behind-tabs-off .tab-indicator.active{
-    background-color:var(--colorAccentBg);
-}
-
-.color-behind-tabs-off .tab.active + .tab-group-indicator .tab-indicator.active{
-    background-color:var(--colorAccentBg)
-}
-
-/*tabs-stack.tabs-subcontainer*/
-#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer.left, 
-#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer.right{
-    box-shadow:none;
-}
-
-#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer, 
-#browser:not(.tabs-top):not(.tabs-bottom).transparent-tabbar #tabs-subcontainer{
-    background-color:transparent;
 }
 
 /*panel*/
@@ -528,10 +459,10 @@ vivaldi version: v6.6 - v7.0
     overflow:visible;
 }
 
-/* #main > .inner{
+#main > .inner{
     background:var(--colorTabBar);
-    background:red;
-} */
+    /* background:red; */
+}
 
 #browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack{
     border-radius:var(--radiusCap);
@@ -563,6 +494,63 @@ vivaldi version: v6.6 - v7.0
 {
     background:transparent;
     box-shadow:none;
+}
+
+/* tab stack frame */
+.dim-blurred:not(.hasfocus) .svg-tab-stack, .dim-blurred:not(.hasfocus) .stack-frame {
+    stroke: var(--colorBorder);
+}
+.svg-tab-stack, .stack-frame {
+    stroke: var(--colorBgIntense);
+}
+.svg-tab-stack line, .svg-tab-selection line, .svg-tab-stack rect, .svg-tab-selection rect {
+    fill: none;
+    stroke-width: 3px;
+}
+
+/*tab-stack minimal*/
+.tab-indicator{
+    border-top:4px solid transparent;
+    border-bottom:10px solid tranparent;
+    transition-duration: 0.1s;
+    transition:0.1s;
+}
+
+.tab-indicator:hover{
+    border-top:0px solid transparent;
+    border-bottom:10px solid tranparent;
+    transition-duration: 0.1s;
+    transition:0.1s;
+}
+
+.tab-group-indicator{
+    padding:0;
+}
+
+.color-behind-tabs-off .tab-indicator{
+    background-color:var(--colorAccentBgAlpha);
+}
+.color-behind-tabs-off .tab-indicator:hover{
+    background-color:var(--colorAccentBg);
+}
+
+.color-behind-tabs-off .tab-indicator.active{
+    background-color:var(--colorAccentBg);
+}
+
+.color-behind-tabs-off .tab.active + .tab-group-indicator .tab-indicator.active{
+    background-color:var(--colorAccentBg)
+}
+
+/*tabs-stack.tabs-subcontainer*/
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer.left, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer.right{
+    box-shadow:none;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer, 
+#browser:not(.tabs-top):not(.tabs-bottom).transparent-tabbar #tabs-subcontainer{
+    background-color:transparent;
 }
 
 /* Transparent Start Page Navigation*/

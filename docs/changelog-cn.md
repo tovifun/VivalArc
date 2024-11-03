@@ -1,3 +1,12 @@
+## 🗓️ 2024.11.03 | v1.1.0
+Vivaldi 最近更新了 7.0 版本。变化还挺大的，比较明显的是 UI 的几个改动——图标更加精致、UI也变得更现代了一些，还有就是侧边栏选中的Tab的投影变得更加细腻。这个改动非常推荐大家升级，因为这个版本也使得 VivalArc 变得更加好看了。幸运的是，Vivaldi 的大版本升级，并没有带来 VivalArc 的任何问题。不过尽管如此，这次更新还是想解决一下 Github Issues 积累的几个问题。这些更新的列表如下：
+
+1. 用户反馈 Footer 无论如何设置都看不到了，于是新版本的 VivalArc 不隐藏这个 Footer 了。（当然，你还是可以在设置中，把它隐藏）[#28](https://github.com/tovifun/VivalArc/issues/28)@IamMiao
+2. 用户反馈的弹出是的页面，无法拖拽顶部的地址栏，新版本中，加入了 @Zettry 提供的，在地址栏加入拖拽的功能 [#30](https://github.com/tovifun/VivalArc/issues/30)
+3. 在标签栏超过1屏出现滚动条的时候，之前我是隐藏了滚动条的，这样导致标签栏宽度无法缩小到图标的宽度。所以还是先放出来滚动条，滚动条有点影响美观，目前只能等官方优化滚动条样式，或者是后续有方法再来优化 [#31](https://github.com/tovifun/VivalArc/issues/31)
+4. 也是本次更新最重要的变化(同时也是最多用户反馈的)，自动隐藏的 Tabbar。此方法还是来自 @Zettry [#21](https://github.com/tovifun/VivalArc/issues/21) [#29](https://github.com/tovifun/VivalArc/issues/29)
+   1. 不过目前感觉还不是特别完美（后续如果继续优化之后变得稳定，会考虑作为默认样式），所以我还是新开了一个文件作为 VivalArc 的一个变体，如果你想体验自动隐藏的标签栏，可以选择使用（位于根目录/vivalarc-autobab）。
+
 ## 🗓️ 2024.08.17 | v1.0.4
 ### 1. 针对 Vivaldi 6.9 的优化
 Vivaldi Snapshot 6.9（Vivaldi 的 Beta 版）最近发布了更新，这次更新引发了 VivalArc 的一个小问题——侧边栏的背景多了一层半透明效果 #24。此次优化的重点是解决这个问题。

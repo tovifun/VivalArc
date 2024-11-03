@@ -20,6 +20,7 @@ This project mainly includes a set of CSS files and a Vivaldi theme. With a few 
 
 ## 💌 Thanks for
 - Github [@clementpoiret](https://github.com/clementpoiret) added [ArcDark Theme](https://github.com/tovifun/VivalArc/pull/5)
+- Github [@Zettry](https://github.com/Zettry) Resolved multiple [Issues](https://github.com/tovifun/VivalArc/issues/21)
 
 ---
 

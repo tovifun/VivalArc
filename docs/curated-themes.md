@@ -8,16 +8,16 @@ You can also find these themes in the local folder ../themes/
 
 | name       | preview                           | 
 | ---------- | ----------------------------------- | 
-| [VivalArc Reflect Pink]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_pink.jpg) | 
-| [VivalArc Reflect Purple Vibrant]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_purple_vibrant.jpg) | 
-| [VivalArc Reflect Purple]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_purple.jpg) | 
-| [VivalArc Reflect Blue]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_blue.jpg) | 
-| [VivalArc Reflect Green]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_green.jpg) | 
-| [VivalArc Reflect Dark]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark.jpg) | 
-| [VivalArc Reflect Dark Purple]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_purple.jpg) | 
-| [VivalArc Reflect Dark Pink]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_pink.jpg) | 
-| [VivalArc Reflect Dark Blue]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_blue.jpg) | 
-| [VivalArc Reflect Dark Green]  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_green.jpg) | 
+| [VivalArc Reflect Pink](https://themes.vivaldi.net/themes/r6ElroVovRk)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_pink.jpg) | 
+| [VivalArc Reflect Purple Vibrant](https://themes.vivaldi.net/themes/KnVJDjqel90)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_purple_vibrant.jpg) | 
+| [VivalArc Reflect Purple](https://themes.vivaldi.net/themes/ZQDJn0VjlLB)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_purple.jpg) | 
+| [VivalArc Reflect Blue](https://themes.vivaldi.net/themes/ayRlXLGel0M)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_blue.jpg) | 
+| [VivalArc Reflect Green](https://themes.vivaldi.net/themes/KnVJDjpel90)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_green.jpg) | 
+| [VivalArc Reflect Dark](https://themes.vivaldi.net/themes/ayRlXLgel0M)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark.jpg) | 
+| [VivalArc Reflect Dark Purple](https://themes.vivaldi.net/themes/ZQDJn0VwlLB)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_purple.jpg) | 
+| [VivalArc Reflect Dark Pink](https://themes.vivaldi.net/themes/okQlZLPWJDX)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_pink.jpg) | 
+| [VivalArc Reflect Dark Blue](https://themes.vivaldi.net/themes/r6ElroVxvRk)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_blue.jpg) | 
+| [VivalArc Reflect Dark Green](https://themes.vivaldi.net/themes/1RQ7G9Qmvye)  | ![theme](../themes/theme_screenshots/vivalarc_reflect_dark_green.jpg) | 
 | [Arc Light](https://themes.vivaldi.net/themes/1LVJ2bOYJx9)  | ![theme](../themes/theme_screenshots/theme_arclight.jpg) | 
 | [Arc Green](https://themes.vivaldi.net/themes/eZXvokoRvOW) | ![theme](../themes/theme_screenshots/theme_gradient_greenlight.jpg) | 
 | [Arc Pink](https://themes.vivaldi.net/themes/0WV7AngZlaX) | ![theme](../themes/theme_screenshots/theme_gradient_pinklight.jpg) | 

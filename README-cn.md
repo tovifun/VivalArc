@@ -23,6 +23,7 @@
 ## 💌 感谢
 - Github [@clementpoiret](https://github.com/clementpoiret) 添加了 [ArcDark 主题](https://github.com/tovifun/VivalArc/pull/5)
 - Bilibili @食用请在保质期 [提供的Windows上优化滚动条样式的方式](https://www.bilibili.com/video/BV1fe4y1a7WQ) 
+- Github [@Zettry](https://github.com/Zettry) 解决了几个 [Issue](https://github.com/tovifun/VivalArc/issues/21)
 ---
 
 ## 🧑‍💻 来自用户的截屏

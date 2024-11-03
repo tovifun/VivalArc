@@ -1,5 +1,14 @@
-## 🗓️ 2024.08.17 | v1.0.4
+## 🗓️ 2024.11.03 | v1.1.0
+Vivaldi recently updated to version 7.0, bringing noticeable UI changes—more refined icons, a modernized look, and enhanced shadows on selected sidebar tabs. This update is highly recommended as it makes VivalArc look even better.
 
+Thankfully, this major update didn’t cause any issues with VivalArc. However, a few accumulated GitHub issues were addressed:
+
+1. Footer visibility issue: The footer is now visible by default, but you can still hide it in settings. [#28](https://github.com/tovifun/VivalArc/issues/28) @IamMiao
+2.	Added draggable functionality to the popup page’s address bar, suggested by @Zettry. [#30](https://github.com/tovifun/VivalArc/issues/30)
+3.	Restored the scrollbar in the tab bar to allow width adjustments, though it slightly impacts aesthetics. [#31](https://github.com/tovifun/VivalArc/issues/31)
+4.	Added an auto-hiding tab bar feature (suggested by @Zettry), available as a variant in /vivalarc-autobab. [#21](https://github.com/tovifun/VivalArc/issues/21) [#29](https://github.com/tovifun/VivalArc/issues/29)
+
+## 🗓️ 2024.08.17 | v1.0.4
 ### 1. Optimization for Vivaldi 6.9
 Vivaldi Snapshot 6.9 (the Beta version of Vivaldi) was recently updated, which introduced a minor issue with VivalArc—an extra semi-transparent layer appeared on the sidebar background #24 . This update primarily addresses and resolves this issue.
 
