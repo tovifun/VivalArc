@@ -635,7 +635,7 @@ button.button-startpage:active { background: none !important; }
 
 .inner > .tabbar-wrapper > .tabbar-wrapper:hover{
     position: absolute;
-    background:var(--colorImageLeftBg);
+    background:var(--colorImageLeftBg, var(--colorBgLight)) ;
 
 }
 

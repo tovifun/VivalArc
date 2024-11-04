@@ -69,7 +69,7 @@ vivaldi version: v6.6 - v7.0
 #browser.mac:not(.is-settingspage):not(.address-top).tabs-left.tabs-right > #header,
 #browser.mac:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header,
 #browser.mac.color-behind-tabs-off:not(.is-settingspage)#browser.tabs-left.tabs-right #header{
-    background:var(--colorTabBar);
+    background:transparent;
     min-height:var(--mac-header) !important;
     height:var(--mac-header) !important;
 }
