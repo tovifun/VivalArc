@@ -27,6 +27,12 @@
 - **Appearance** > Status Bar > `Status Info Overlay`
 - **Panel** > Panel Options > `Check 'Floating Panel'`
 - **Quick Commands** > `Check 'Open Links In New Tab'`
+- **Quick Commands** > **Command Chains**
+    - Add Command Chain
+    - Chain name > `Copy URL to Clipboard`
+    - Command 1 > `Focus Address Field`
+    - Command 2 > `Delay` with Command Parameter `300`
+    - Command 3 > `Copy`
 - **Keyboard** (Set the necessary keyboard shortcuts)
     - New Tab > Remove it
     - Quick Command > `Command + T`
@@ -35,7 +41,8 @@
     - Create Bookmark > Remove it
     - Pin / Unpin Tab > `Command + D`
     - Print > Remove it
-    - Panel > `Comand + P`
+    - Panel > `Command + P`
+    - Chains > Copy URL to Clipboard > `Command + Shift + C`
 
 ### 3. Custom UI Mod
 - [Download the mod](https://github.com/tovifun/VivalArc/archive/refs/heads/main.zip), extract it to anywhere safe on your PC
