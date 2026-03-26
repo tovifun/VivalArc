@@ -1,19 +1,73 @@
-你好，这个项目主要包含一套 CSS 文件和一个 Vivaldi 主题。目的是将 Vivaldi 自定义配置成 Arc 的外观样式，作为 Arc 的平替。适用于 macOS, Windows 和 Linux。
-- 关于这个项目的背景，可查看文档
-  - [📄VivalArc, 背后的故事](https://github.com/tovifun/VivalArc/blob/main/docs/behind-the-scene-cn.md)
-- 如果你想直接开始配置
-  - [📝开始配置 VivalArc](https://github.com/tovifun/VivalArc/blob/main/docs/configure-vivaldi-cn.md)
-- 如果不想阅读文字版，也可以看我在B站上的步骤视频 
-  - [📺5分钟将 Vivaldi 配置成 Arc](https://www.bilibili.com/video/BV1fe4y1a7WQ)
-- VivalArc Blog
-  - [🎨推荐一些 Vivaldi 主题](https://github.com/tovifun/VivalArc/blob/main/docs/curated-themes-cn.md)
-  - [🧑‍💻如何使用 VivalArc 不同版本](https://github.com/tovifun/VivalArc/blob/main/docs/vivalarc-variants-cn.md)
-  - [🎨如何使用本地的 Vivaldi 主题](https://github.com/tovifun/VivalArc/blob/main/docs/using-local-vivaldi-theme-cn.md)
-- 更多相关链接
-  - [🧑‍💻常见问题](https://github.com/tovifun/VivalArc/blob/main/docs/faq-cn.md)
-  - [🎉更新日志](https://github.com/tovifun/VivalArc/blob/main/docs/changelog-cn.md)
-  - [🌐VivalArc 官网](https://arc.tovi.fun)
-  - [📝VivalArc README English version](https://github.com/tovifun/VivalArc/blob/main/README.md) 
+# VivalArc
+
+将 Vivaldi 浏览器自定义配置成 Arc 浏览器的外观样式，作为 Arc 的完美平替。
+
+**当前版本**: v1.3.0 | **支持 Vivaldi**: v7.9+ | **平台**: macOS, Windows, Linux
+
+## 🚀 快速开始
+
+### 1. 克隆项目
+```bash
+git clone https://github.com/tovifun/VivalArc.git
+```
+
+### 2. 选择版本
+
+#### ✨ 根目录版本（唯一持续维护）
+在 Vivaldi 设置中选择目录：`VivalArc/`
+
+这是后续会继续接收修复和优化的唯一版本。
+
+#### 📁 兼容性目录（历史保留）
+- **自动隐藏标签栏**: `VivalArc/variants/autotab/`
+- **紧凑布局**: `VivalArc/variants/compact/`
+
+这些目录会继续保留，但后续不再作为主要迭代对象。
+
+#### 📦 归档版本（旧版本支持）
+- **Vivaldi 6.9**: `VivalArc/archive/v6.9/default/`
+- **Vivaldi 7.0**: `VivalArc/archive/v7.0/default/`
+- **Vivaldi 7.4**: `VivalArc/archive/v7.4/default/`
+
+详细配置步骤请查看：[📝开始配置 VivalArc](./docs/installation/getting-started-cn.md)
+
+## 📚 文档
+
+### 快速入门
+- [📝配置指南](./docs/installation/getting-started-cn.md)
+- [📺视频教程 - 5分钟将 Vivaldi 配置成 Arc](https://www.bilibili.com/video/BV1fe4y1a7WQ)
+- [📄项目背景故事](./docs/about/behind-the-scene-cn.md)
+
+### 使用指南
+- [📁历史变体说明](./docs/guides/variants-guide-cn.md)
+- [🖼️推荐的 Vivaldi 主题](./docs/reference/curated-themes-cn.md)
+- [🎨使用本地 Vivaldi 主题](./docs/guides/using-local-vivaldi-theme-cn.md)
+
+### 参考资料
+- [🧑‍💻常见问题 FAQ](./docs/reference/faq-cn.md)
+- [🎉更新日志](./docs/reference/changelog-cn.md)
+- [🌐VivalArc 官网](https://arc.tovi.fun)
+- [📝English README](./README.md)
+
+## 📂 项目结构
+
+```
+VivalArc/
+├── vivalarc.css           # v7.9 默认版本
+├── variants/              # 历史兼容目录
+│   ├── autotab/          # 自动隐藏标签栏
+│   └── compact/          # 紧凑布局
+├── archive/              # 旧版本归档
+│   ├── v6.9/
+│   ├── v7.0/
+│   └── v7.4/
+├── themes/               # Vivaldi 主题包
+├── assets/               # 资源文件
+│   ├── icons/
+│   └── wallpapers/
+├── docs/                 # 完整文档
+└── screenshots/          # 项目截图
+``` 
 
 ## 🖥️ VivalArc Screenshot
  ![Screenshot](./screenshots/vivalarc_1.0.0_mac.jpeg)

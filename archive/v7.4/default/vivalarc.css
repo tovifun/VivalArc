@@ -1,0 +1,505 @@
+/* 
+version: 1.1.0
+update: 2025.05.15
+vivaldi version: v7.4
+*/
+
+:root{
+    --window-border:3px; /* window border, recommend 4px~16px */
+    --mac-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --win-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --linux-header:calc(var(--window-border) + 20px); /* title bar extra height */
+    --footer-height:24px;
+    --window-button-scale:0.8;
+    --window-button-opacity:0.3;
+    --colorArcBg:transparent;
+    --redline: #ff00ff;
+    --redlineBorder: 1px solid #ff00ff;
+    --webview-shadow-light:0px 1px 3px 0px rgba(0, 0, 0, 0.1), 0px 0px var(--window-border) 0px rgba(0, 0, 0, 0.10);
+    --webview-shadow-dark:0px 2px 2px 0px rgba(0, 0, 0, 0.05), 0px 2px 8px 0px rgba(0, 0, 0, 0.05), 0px 0px 0px 1.2px #ffffff18;
+}
+
+/*breakmode*/
+#browser.break-mode #main{
+    opacity:0;
+}
+
+/*defaultBrowserModal*/
+#modal-bg.default-browser{
+    display:none;
+}
+
+/*tabbarDrag*/
+/* .tabbar-wrapper{
+    -webkit-app-region: drag;
+} */
+
+/*footerDisplay*/
+#browser:not(.tabs-bottom):not(.tabs-top) footer#footer,
+#browser:not(.tabs-bottom):not(.tabs-top) > footer,
+#browser > footer > .toolbar-statusbar{
+    background:var(--colorArcBg);
+    color: var(--colorImageBottomFg);
+    height: calc(var(--footer-height) + var(--densityGap) * 2);
+    border:none;
+}
+
+/*topHeader*/
+#browser:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header{
+    box-shadow:none;
+    background:var(--colorArcBg);
+    overflow: visible;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).linux:not(.alt) #titlebar #pagetitle,
+#browser:not(.tabs-top):not(.tabs-bottom).win #titlebar #pagetitle,
+#browser:not(.tabs-top):not(.tabs-bottom).mac #titlebar #pagetitle{
+    font-size: 11px;
+    font-weight:600;
+    color:var(--colorImageTopFgAlpha, var(--cololrFg));
+    padding-bottom: 8px;
+}
+
+/*mainbar*/
+#browser:not(.tabs-top):not(.tabs-bottom) .mainbar{
+    border:none;
+    background: var(--colorArcBg);
+    color:var(--colorImageTopFg, var(--colorFg));
+    -webkit-app-region: drag;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) .UrlBar-SearchField,
+#browser:not(.tabs-top):not(.tabs-bottom) .UrlBar-AddressField, 
+#browser:not(.tabs-top):not(.tabs-bottom) .SearchField,
+#browser:not(.tabs-top):not(.tabs-bottom).dim-blurred:not(.hasfocus) .UrlBar-AddressField, 
+#browser:not(.tabs-top):not(.tabs-bottom).dim-blurred:not(.hasfocus) .SearchField, 
+#browser:not(.tabs-top):not(.tabs-bottom).hasfocus .UrlBar-AddressField, 
+#browser:not(.tabs-top):not(.tabs-bottom).hasfocus .SearchField, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .UrlBar-AddressField,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .SearchField{
+    background-color: var(--colorImageCenterFgAlphaHeavy, var(--colorFgAlpha));
+    border: 1px solid var(--colorImageCenterFgAlphaHeavy, var(--colorFgAlpha));
+    color:var(--colorImageCenterFgAlpha, var(--colorFg));
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) .UrlBar-SearchField:focus-within,
+#browser:not(.tabs-top):not(.tabs-bottom) .UrlBar-AddressField:focus-within, 
+#browser:not(.tabs-top):not(.tabs-bottom) .SearchField:focus-within,
+#browser:not(.tabs-top):not(.tabs-bottom).dim-blurred:not(.hasfocus) .UrlBar-AddressField:focus-within, 
+#browser:not(.tabs-top):not(.tabs-bottom).dim-blurred:not(.hasfocus) .SearchField:focus-within, 
+#browser:not(.tabs-top):not(.tabs-bottom).hasfocus .UrlBar-AddressField:focus-within, 
+#browser:not(.tabs-top):not(.tabs-bottom).hasfocus .SearchField:focus-within, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .UrlBar-AddressField:focus-within,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .SearchField:focus-within{
+    background-color: var(--colorBg);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) .UrlFragment-Wrapper:not(.UrlFragment-Wrapper--ShouldHighlight),
+#browser:not(.tabs-top):not(.tabs-bottom) .UrlFragment--Highlight,
+#browser:not(.tabs-top):not(.tabs-bottom) .UrlFragment-Wrapper--ShouldHighlight,
+#browser:not(.tabs-top):not(.tabs-bottom) .UrlFragment-Wrapper--ShouldHighlight,
+#browser:not(.tabs-top):not(.tabs-bottom) .UrlFragment--Highlight{
+    --HighlightColor:var(--colorImageCenterFgAlpha, var(--colorFg));
+    --LowlightColor: var(--colorImageCenterFgAlpha, var(--colorFg));
+}
+
+.button-toolbar > button{
+    border:none;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).density-on .toolbar-mainbar:not(.toolbar-wrap) .button-toolbar:not(:last-of-type), 
+#browser:not(.tabs-top):not(.tabs-bottom).density-on .toolbar-statusbar .button-toolbar:not(:last-of-type){
+    padding-right:0;
+    margin-right:var(--densityGap);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) .ExtensionIcon--Hidden,
+#browser:not(.tabs-top):not(.tabs-bottom) .ExtensionToggleIcon.ExtensionToggleIcon--Expanded{
+    background-color:var(--colorArcBg);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) .ExtensionIcon--Hidden:hover,
+#browser:not(.tabs-top):not(.tabs-bottom) .ExtensionIcon--Hidden:active,
+#browser:not(.tabs-top):not(.tabs-bottom) .button-toolbar > button:hover, 
+#browser:not(.tabs-top):not(.tabs-bottom) .button-toolbar > button:active{
+    background-color:var(--colorBgAlphaHeavier);
+    border-radius:var(--radius)
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar .toolbar-extensions > .button-toolbar > button:hover,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar .page-zoom-controls > .button-toolbar > button:hover,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar > .button-toolbar > button:hover, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar .toolbar-extensions > .toolbar-group > .button-toolbar > button:hover,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar .page-zoom-controls > .toolbar-group > .button-toolbar > button:hover,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .toolbar-mainbar > .toolbar-group > .button-toolbar > button:hover,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .ExtensionIcon:hover,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .ExtensionIcon--Hidden:hover,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .ExtensionIcon--Hidden:active,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .bookmark-bar button:hover
+{
+    background-color: var(--colorImageCenterFgAlphaHeavy, var(--colorFgAlpha));
+    border-radius:var(--radius);
+}
+
+/*bookmark-bar*/
+/* #browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off.bookmark-bar-top .bookmark-bar,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-on.bookmark-bar-top .bookmark-bar,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off .bookmark-bar button,
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-on .bookmark-bar button{
+    background:transparent;
+    color:var(--colorImageCenterFg, var(--colorFg));
+    border-bottom-width:0;
+}
+ */
+
+/*workspace button*/
+#browser.transparent-tabbar .button-toolbar.workspace-popup.tabbar-workspace-button,
+#browser.transparent-tabbar.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button,
+#browser.transparent-tabbar.tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button,
+.tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button, 
+.tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button{
+    box-shadow:none;
+    background:var(--colorArcBg);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).transparent-tabbar .button-toolbar.workspace-popup.tabbar-workspace-button.button-menu{
+    color:var(--colorImageFg, var(--colorFg));
+}
+
+/* #app .tabs-left .button-toolbar.workspace-popup.tabbar-workspace-button button, 
+#app .tabs-right .button-toolbar.workspace-popup.tabbar-workspace-button button{
+    padding-left:4px;
+    padding-right:4px;
+} */
+
+.button-toolbar.button-menu .button-toolbar-menu-indicator.disabled{
+    opacity:0.3;
+}
+
+/*topHeader-Mac*/
+#browser.mac:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header{
+    min-height:var(--mac-header) !important;
+    height:var(--mac-header) !important;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).mac #titlebar #pagetitle{
+    height:var(--mac-header) !important;
+}
+
+/*topHeader-Linux*/
+#browser.linux:not(.is-settingspage):not(.address-top) > #header,
+#browser.linux:not(.is-settingspage):not(.tabs-top) #header,
+#browser.linux.color-behind-tabs-off:not(.is-settingspage)#browser:not(.tabs-top):not(.tabs-bottom) #header{
+    min-height:var(--linux-header) !important;
+    height:var(--linux-header) !important;
+}
+
+.linux:not(.alt) #titlebar #pagetitle{
+    height:var(--linux-header);
+    padding:0 120px;
+}
+
+/*topHeader-Win*/
+#browser.win:not(.is-settingspage):not(.address-top) > #header,
+#browser.win:not(.is-settingspage):not(.tabs-top) #header,
+#browser.win.color-behind-tabs-off:not(.is-settingspage)#browser:not(.tabs-top):not(.tabs-bottom) #header{
+    min-height:var(--win-header) !important;
+    height:var(--win-header) !important;
+}
+
+#browser.win #titlebar #pagetitle{
+    height:var(--win-header);
+    padding:0 140px;
+}
+
+.win #titlebar #pagetitle > span, 
+.linux:not(.alt) #titlebar #pagetitle > span{
+    text-align:center;
+}
+
+/*windowVivaldi*/
+.disable-titlebar.address-top#browser:not(.tabs-top) .vivaldi{
+    border-radius:var(--radiusCap);
+    margin:0 9px;
+}
+
+.disable-titlebar.address-top#browser:not(.tabs-top) .vivaldi:hover{
+    background-color:var(--colorFgAlpha);
+}
+
+#browser.linux:not(.tabs-top) #titlebar .vivaldi,
+#browser.win:not(.is-settingspage):not(.tabs-top) #titlebar .vivaldi{
+    color:var(--colorFgAlpha);
+    scale: calc(0.8 / var(--uiZoomLevel));
+    margin-left: -2px;
+    margin-top: 0px;
+}
+
+#browser.linux:not(.tabs-top) #titlebar .vivaldi:hover,
+#browser.win:not(.is-settingspage):not(.tabs-top) #titlebar .vivaldi:hover{
+    color:var(--colorFg);
+    background-color:var(--colorImageBgAlpha), var(--colorBgAlpha);
+}
+
+/*windowButtonGroup-Win*/
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup{
+    opacity:var(--window-button-opacity);
+    color:var(--colorFg);
+    line-height:var(--win-header);
+}
+
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup:hover{
+    opacity:1;
+}
+
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button,
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-close{
+    width: calc(var(--win-header) * 2);
+    height:var(--win-header);
+}
+
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-minimize svg,
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-maximize svg,
+#browser.win:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) #header #titlebar .window-buttongroup button.window-close svg{
+    scale:var(--window-button-scale);
+}
+
+/*windowButtonGroup-Linux*/
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup{
+    right: calc(var(--window-border) / var(--uiZoomLevel));
+    top: calc(1px / var(--uiZoomLevel));
+}
+
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup button{
+    width:calc((var(--linux-header) - 2px) * 1.32 / var(--uiZoomLevel));
+    height:calc((var(--linux-header) - 2px) / var(--uiZoomLevel));
+    padding:0px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup button svg{
+    scale: calc(var(--window-button-scale) / var(--uiZoomLevel));
+    opacity:var(--window-button-opacity);
+}
+
+#browser.linux:not(.is-settingspage):not(.tabs-top):not(.tabs-bottom) .window-buttongroup button svg:hover{
+    opacity:1;
+}
+
+/*tabbar left & tabbar right*/
+/* #browser #tabs-tabbar-container.left  ::-webkit-scrollbar, 
+#browser #tabs-tabbar-container.right  ::-webkit-scrollbar{
+    display: none; 
+} */
+
+.tabs-left .tabbar-wrapper,
+.tabs-right .tabbar-wrapper,
+#browser.transparent-tabbar #tabs-tabbar-container.left, 
+#browser.transparent-tabbar #tabs-tabbar-container.right,
+#browser:not(.transparent-tabbar) #tabs-tabbar-container
+{
+    background: var(--colorArcBg);
+    border: none;
+    box-shadow:none;
+    /* border:var(--redlineBorder) */
+}
+
+#browser.tabs-left .inner>.tabbar-wrapper, 
+#browser.tabs-right .inner>.tabbar-wrapper{
+    padding-bottom:var(--window-border);
+}
+
+/* #browser.mac.address-top-off.tabs-left .inner>.tabbar-wrapper, 
+#browser.mac.address-top-off.tabs-right .inner>.tabbar-wrapper{
+    padding-top:8px;
+} */
+
+/* tab stack frame */
+/* .dim-blurred:not(.hasfocus) .svg-tab-stack, .dim-blurred:not(.hasfocus) .stack-frame {
+    stroke: var(--colorBorder);
+}
+.svg-tab-stack, .stack-frame {
+    stroke: var(--colorBgIntense);
+}
+.svg-tab-stack line, .svg-tab-selection line, .svg-tab-stack rect, .svg-tab-selection rect {
+    fill: none;
+    stroke-width: 3px;
+}
+ */
+/*tab-stack minimal*/
+/* .tab-indicator{
+    border-top:4px solid transparent;
+    border-bottom:10px solid tranparent;
+    transition-duration: 0.1s;
+    transition:0.1s;
+} */
+
+/* .tab-indicator:hover{
+    border-top:0px solid transparent;
+    border-bottom:10px solid tranparent;
+    transition-duration: 0.1s;
+    transition:0.1s;
+}
+ */
+/* .tab-group-indicator{
+    padding:0;
+} */
+
+.color-behind-tabs-off .tab-indicator{
+    background-color:var(--colorAccentBgAlpha);
+}
+.color-behind-tabs-off .tab-indicator:hover{
+    background-color:var(--colorAccentBg);
+}
+
+.color-behind-tabs-off .tab-indicator.active{
+    background-color:var(--colorAccentBg);
+}
+
+.color-behind-tabs-off .tab.active + .tab-group-indicator .tab-indicator.active{
+    background-color:var(--colorAccentBg)
+}
+
+/*tabs-stack.tabs-subcontainer*/
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer.left, 
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer.right{
+    box-shadow:none;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom).color-behind-tabs-off #tabs-subcontainer, 
+#browser:not(.tabs-top):not(.tabs-bottom).transparent-tabbar #tabs-subcontainer{
+    background-color:transparent;
+}
+
+/*panel*/
+#browser .manager-editor,
+#browser .toolbar:not(.toolbar-mainbar, .toolbar-statusbar){
+    color:var(--colorImageCenterFgAlpha, var(--colorFg));;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels #switch,
+#browser:not(.tabs-top):not(.tabs-bottom) #panels,
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container
+{
+    padding-top: 0px;
+    border: 0;
+}
+
+.icons #switch .addwebpanel-wrapper > button, 
+.icons #switch > .button-toolbar, 
+.icons #switch > * > .button-toolbar, 
+.icons #switch > button{
+    border-radius:calc(var(--radiusHalf));
+}
+
+/* #browser:not(.tabs-top):not(.tabs-bottom) .icons #switch .addwebpanel-wrapper > button:not(.toolbar-spacer, .toolbar-spacer-flexible, .divider):hover,
+#browser:not(.tabs-top):not(.tabs-bottom) .icons #switch > .button-toolbar:not(.toolbar-spacer, .toolbar-spacer-flexible, .divider):hover,
+#browser:not(.tabs-top):not(.tabs-bottom) .icons #switch > * .button-toolbar:not(.toolbar-spacer, .toolbar-spacer-flexible, .divider):hover,
+#browser:not(.tabs-top):not(.tabs-bottom) .icons #switch > button:not(.toolbar-spacer, .toolbar-spacer-flexible, .divider):hover{
+    background:var(--colorFgAlpha);
+} */
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container{
+    margin-bottom:var(--window-border);
+    background:var(--colorArcBg);
+    
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.overlay{
+    background:var(--colorBgAlphaBlur);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.icons{
+    background: var(--colorArcBg);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container:not(.icons) .panel-group{
+    background:var(--colorBgAlphaBlur);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container .panel-group{
+    border-radius:var(--radiusCap)
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom) #panels-container.overlay .panel-group{
+    border-radius:0;
+}
+
+/*webview-container*/
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #webview-container{
+    margin:0px var(--window-border) var(--window-border) var(--window-border);
+}
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-left #webview-container{
+    margin:0px var(--window-border) var(--window-border) 0px;
+}
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-right #webview-container{
+    margin:0px 0px var(--window-border) var(--window-border);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #main.left #panels-container.icons ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-right #main.left #panels-container.icons ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #main.left #panels-container.minimized.overlay ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-right #main.left #panels-container.minimized.overlay ~ #webview-container{
+    margin-left:0px;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-left #main.right #panels-container.icons ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #main.right #panels-container.icons ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-left #main.right #panels-container.minimized.overlay ~ #webview-container,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).tabs-off #main.right #panels-container.minimized.overlay ~ #webview-container{
+    margin-right:0px;
+}
+
+
+/*rounded webview*/
+#main, #main > .inner{
+    overflow:visible;
+}
+
+/* #main > .inner{
+    background:var(--colorTabBar);
+    background:red;
+} */
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack{
+    border-radius:var(--radiusCap);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).theme-light #webpage-stack{
+    box-shadow: var(--webview-shadow-light);
+}
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen).theme-dark #webpage-stack{
+    box-shadow: var(--webview-shadow-dark);
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack:has(.tiled .visible),
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webpage-stack:has(.mosaic .visible){
+    box-shadow: none;
+}
+
+/*tile*/
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webview-container:has(#webpage-stack .tiled .visible),
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) #webview-container:has(#webpage-stack .mosaic .visible){
+    box-shadow: none;
+    padding:0px;
+}
+
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .mosaic-split .mosaic-split-line:before, .mosaic-split .mosaic-split-line:after,
+#browser:not(.tabs-top):not(.tabs-bottom):not(.fullscreen) .tile,
+#browser:not(.inner, .narrow-tiling) .tiled.visible .tile[data-id]
+{
+    background:transparent;
+    box-shadow:none;
+}
+/* Transparent Start Page Navigation*/
+.startpage .startpage-navigation { box-shadow: none !important; }
+.startpage .startpage-navigation { background: transparent !important; }
+.startpage .startpage-navigation .startpage-navigation-group { border: 0 !important; } 
+
+/* Transparent Start Page Navigation Buttons */
+button.button-startpage { box-shadow: none !important; }
+button.button-startpage:after { background-image: none !important; }
+button.button-startpage:active { background: none !important; }

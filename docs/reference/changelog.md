@@ -1,3 +1,12 @@
+## 🗓️ 2026.03.26 | v1.3.0
+This update targets the latest Vivaldi 7.9 release and refreshes VivalArc after a long gap between updates.
+
+1. Updated compatibility for Vivaldi 7.9.
+2. Simplified the stylesheet again and removed more custom overrides, so the root version is less fragile against future Vivaldi UI changes.
+3. After more than a year without updates, several visual issues that had accumulated over time were cleaned up in this release.
+
+Today, most mainstream browsers, including Chrome, already offer built-in vertical tabs. For me, Vivaldi's remaining advantage is still its level of customization. Because of that, I plan to keep maintaining VivalArc, but future updates will focus more on fixing visual regressions and interface bugs than on adding more stylistic branches.
+
 ## 🗓️ 2024.11.03 | v1.1.0
 Vivaldi recently updated to version 7.0, bringing noticeable UI changes—more refined icons, a modernized look, and enhanced shadows on selected sidebar tabs. This update is highly recommended as it makes VivalArc look even better.
 
@@ -6,14 +15,14 @@ Thankfully, this major update didn’t cause any issues with VivalArc. However, 
 1. Footer visibility issue: The footer is now visible by default, but you can still hide it in settings. [#28](https://github.com/tovifun/VivalArc/issues/28) @IamMiao
 2.	Added draggable functionality to the popup page’s address bar, suggested by @Zettry. [#30](https://github.com/tovifun/VivalArc/issues/30)
 3.	Restored the scrollbar in the tab bar to allow width adjustments, though it slightly impacts aesthetics. [#31](https://github.com/tovifun/VivalArc/issues/31)
-4.	Added an auto-hiding tab bar feature (suggested by @Zettry), available as a variant in /vivalarc-autobab. [#21](https://github.com/tovifun/VivalArc/issues/21) [#29](https://github.com/tovifun/VivalArc/issues/29)
+4.	Added an auto-hiding tab bar feature (suggested by @Zettry), introduced as a separate variant at the time. [#21](https://github.com/tovifun/VivalArc/issues/21) [#29](https://github.com/tovifun/VivalArc/issues/29)
 
 ## 🗓️ 2024.08.17 | v1.0.4
 ### 1. Optimization for Vivaldi 6.9
 Vivaldi Snapshot 6.9 (the Beta version of Vivaldi) was recently updated, which introduced a minor issue with VivalArc—an extra semi-transparent layer appeared on the sidebar background #24 . This update primarily addresses and resolves this issue.
 
 ### 2. How to Use Different Versions of VivalArc
-Some users have asked how to use the style with a title bar #26. In fact, I have created several variants of VivalArc, allowing you to choose the style that best suits your preferences. For more details, please refer to: [How to Set Up Different Versions of Vivaldi Arc](./vivalarc-variants.md).
+Some users asked how to use the style with a title bar #26. At that time, I created several VivalArc variants for different preferences. For historical notes, please refer to: [Legacy Variant Notes](../guides/variants-guide.md).
 
 ### 3. Reflect New Tab Theme
 I recently discovered a plugin called [Reflect New Tab](https://chromewebstore.google.com/detail/reflect-new-tab/jnhdkfampckckkmbanadkkjlcaemdkob), which features a beautiful gradient background. I decided to create a [Vivaldi theme](./curated-themes.md) using this background, and the results were impressive—it gave VivalArc a whole new look. My personal favorite is the pink theme, and I highly recommend you give it a try.
@@ -54,7 +63,7 @@ I recently discovered a plugin called [Reflect New Tab](https://chromewebstore.g
   - Please note that if you make the tabbar area draggable, the double-click to create a new tab feature in the tabbar area will be disabled. You can comment out the "display new tab button" above to add a new tab button to the tabbar area.
 - **Note: After making CSS modifications, you will need to restart your browser for the changes to take effect.**
 
- ![Annotation](./images/annotate-config.png)
+ ![Annotation](../installation/images/annotate-config.png)
 
 
 ## 🗓️ 2023.07.23 
