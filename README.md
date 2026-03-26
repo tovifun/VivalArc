@@ -31,6 +31,19 @@ These folders are kept for reference and compatibility, but they are no longer a
 
 For detailed configuration steps: [📝Getting Started Guide](./docs/installation/getting-started.md)
 
+## ✅ Recommended Setup on Vivaldi 7.8+
+
+Since Vivaldi 7.8 added the Custom Tab Bar, my current preferred setup is:
+
+- Address bar at the top of the side tab bar
+- Back and forward buttons below it
+- Extensions moved into the right panel
+- The top address bar hidden
+
+This feels cleaner and more comfortable to use than forcing every control into the old layout with CSS alone.
+
+![Recommended Setup](./screenshots/screenshot_v1.3.0.png)
+
 ## 📚 Documentation
 
 ### Getting Started
@@ -69,7 +82,7 @@ VivalArc/
 
 ---
 ## 🖥️ VivalArc Screenshot
- ![Screenshot](./screenshots/vivalarc_1.0.0_mac.jpeg)
+ ![Screenshot](./screenshots/screenshot_v1.3.0.png)
 
 ---
 

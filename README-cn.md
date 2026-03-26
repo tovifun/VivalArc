@@ -31,6 +31,19 @@ git clone https://github.com/tovifun/VivalArc.git
 
 详细配置步骤请查看：[📝开始配置 VivalArc](./docs/installation/getting-started-cn.md)
 
+## ✅ Vivaldi 7.8+ 推荐配置
+
+从 Vivaldi 7.8 开始，浏览器已经加入了 Custom Tab Bar。就我自己现在的使用体验来说，最舒服的一套配置是：
+
+- 标签栏顶部放 Address Bar
+- Address Bar 下方放返回和前进按钮
+- 右侧 Panel 里放 Extensions
+- 顶部原生 Address Bar 隐藏
+
+这套方式比起单纯依赖 CSS 去塞下所有控件，会更自然，也更适合长期使用。
+
+![推荐配置](./screenshots/screenshot_v1.3.0.png)
+
 ## 📚 文档
 
 ### 快速入门
@@ -70,7 +83,7 @@ VivalArc/
 ``` 
 
 ## 🖥️ VivalArc Screenshot
- ![Screenshot](./screenshots/vivalarc_1.0.0_mac.jpeg)
+ ![Screenshot](./screenshots/screenshot_v1.3.0.png)
 
 ---
 
