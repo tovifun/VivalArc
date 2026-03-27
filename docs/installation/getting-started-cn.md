@@ -36,6 +36,12 @@
 - **面板** > **面板选项** > 勾上`悬浮面版`
 - **面板** > **面板位置** > 选择`右侧`（左侧也可以，但是左侧是标签栏的位置，比较重度交互的区域，可能会有不可预见的Bug，所以推荐放在右侧和标签栏分开）
 - **快捷命令** > 将`在新标签页打开链接`勾上
+- **快捷命令** > **命令链**
+    - 添加命令链
+    - 链名称 > `Copy URL to Clipboard`
+    - 命令 1 > `聚焦地址栏`
+    - 命令 2 > `延迟`，参数设为 `300`
+    - 命令 3 > `复制`
 - **标签** > **标签组** > 选择一个你比较喜欢的标签组样式
 - **键盘**
     - **新建标签** > 移除「新建标签」的快捷键
@@ -45,13 +51,14 @@
     - **创建书签** > 移除「创建书签」的快捷键
     - **固定 / 取消固定标签** > `Command + D`
     - **打印** > 移除「打印」的快捷键
-    - **面板** > 在原来基础上加上 `Comand + P`
+    - **面板** > 在原来基础上加上 `Command + P`
+    - **命令链** > **Copy URL to Clipboard** > `Command + Shift + C`
 
 ### 第三步：自定义 UI MOD
 
 1. [**下载这个文件**](https://github.com/tovifun/VivalArc/archive/refs/heads/main.zip)，解压保存在一个你不会删除的地方
 2. **打开Vivaldi 设置，设置主题**：可使用我放在本地的主题，如theme-ArcLight.zip
-   - 或者直接打开[我在 Vivaldi Community 上挑选的几个主题](./curated-themes-cn.md)
+   - 或者直接打开[我在 Vivaldi Community 上挑选的几个主题](../reference/curated-themes-cn.md)
 3. **在 Vivaldi 地址栏**：打开 `vivaldi://experiments` 并开启  `"Allow for using CSS modifications"`
 4. **打开 Vivaldi 设置** > 外观 > `自定义UI MOD`
    - 选择文件夹 > 选择刚才解压的文件夹
